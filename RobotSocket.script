@@ -1,0 +1,27 @@
+connected = False
+while connected:
+    connected = socket_open("140.223.164.104", 30000, socket_name = "s")
+end
+
+popup("Connected! Now listening")
+while True:
+    input = socket_read_line("s")
+    if input == "freedrive":
+        freedrive_mode()
+        popup("Freedrive Mode Started")
+    end
+    if input == "end_freedrive":
+        end_freedrive_mode()
+        popup("Freedrive Mode Ended")
+    end
+    if input == "return_pose":
+        CurPos = get_actual_tcp_pose()
+        socket_send_string(CurPos, "s")
+        popup("Pose Sent")
+    end
+    if input == "return_joint_positions":
+        CurJoints = get_actual_joint_positions()
+        socket_send_string(CurJoints, "s")
+        popup("Joint Positions Sent")
+    end
+end

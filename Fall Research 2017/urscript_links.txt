@@ -1,0 +1,4 @@
+Links
+Script that moves robot using Python: http://www.zacobria.com/universal-robots-zacobria-forum-hints-tips-how-to/script-via-socket-connection/
+Intro to UR Script: https://www.zacobria.com/universal-robots-knowledge-base-tech-support-forum-hints-tips/universal-robots-script-programming/
+Another script example: https://www.zacobria.com/universal-robots-knowledge-base-tech-support-forum-hints-tips/knowledge-base/script-from-host-to-robot-via-socket-connection/
