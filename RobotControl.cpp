@@ -1,4 +1,5 @@
-// Client side C/C++ program to demonstrate Socket programming
+// This is the C++ program that establishes a simple socket connection to send one line instructions
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/socket.h>

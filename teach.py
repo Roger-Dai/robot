@@ -1,3 +1,8 @@
+# This is the Python file that runs on the comupter to teach the robot different poses.
+# This program stores those positions in a list and moves the robot arm to those poses 
+# respectively after all poses are taught.
+
+
 import socket
 from time import sleep
 import RobotControl

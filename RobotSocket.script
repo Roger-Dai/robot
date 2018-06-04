@@ -1,3 +1,5 @@
+# This is the program that runs on the robot arm, which listens for various instructions.
+
 connected = False
 while connected:
     connected = socket_open("140.223.164.104", 30000, socket_name = "s")
