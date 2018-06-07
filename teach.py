@@ -2,10 +2,9 @@
 # This program stores those positions in a list and moves the robot arm to those poses 
 # respectively after all poses are taught.
 
-
 import socket
 from time import sleep
-import RobotControl
+import RobotCommands
 
 HOST = '140.233.20.115'
 PORT = 30000
@@ -15,15 +14,11 @@ s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.bind(('', PORT))
 
 s.listen(5)
-temp = s.accept()
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client = temp[0]
-client_addr = temp[1]
-
-
+client, client_addr = s.accept()
 positions = []
+
 while True:
-    x = input()
+    x = input("Enter: ")
     if x == "done":
         break
     else:
@@ -43,6 +38,6 @@ client.close()
 print(positions)
 print("Teach mode finished")
 
-RobotControl.move(positions)
+RobotCommands.move(positions)
 print("Finished!")
 

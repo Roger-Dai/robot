@@ -1,13 +1,13 @@
 # This is the program that runs on the robot arm, which listens for various instructions.
 
 connected = False
-while connected:
-    connected = socket_open("140.223.164.104", 30000, socket_name = "s")
+while not connected:
+    connected = socket_open("140.223.162.184", 30000, "pos")
 end
 
 popup("Connected! Now listening")
 while True:
-    input = socket_read_line("s")
+    input = socket_read_line("pos")
     if input == "freedrive":
         freedrive_mode()
         popup("Freedrive Mode Started")
@@ -18,12 +18,12 @@ while True:
     end
     if input == "return_pose":
         CurPos = get_actual_tcp_pose()
-        socket_send_string(CurPos, "s")
+        socket_send_string(CurPos, "pos")
         popup("Pose Sent")
     end
     if input == "return_joint_positions":
         CurJoints = get_actual_joint_positions()
-        socket_send_string(CurJoints, "s")
+        socket_send_string(CurJoints, "pos")
         popup("Joint Positions Sent")
     end
 end

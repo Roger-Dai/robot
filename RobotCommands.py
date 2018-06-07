@@ -4,18 +4,31 @@ import socket
 import time
 
 HOST = '140.233.20.115'
-PORT0 = 30000
+# PORT0 = 30000
 PORT1 = 30001
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-s.bind(('', PORT0))
+# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+# s.bind(('', PORT0))
 
-s.listen(5)
-temp = s.accept()
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client = temp[0]
-client_addr = temp[1]
+# s.listen(5)
+# temp = s.accept()
+# client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# client = temp[0]
+# client_addr = temp[1]
+
+def connect():
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    s.bind(('', PORT0))
+
+    s.listen(5)
+    temp = s.accept()
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client = temp[0]
+    client_addr = temp[1]
+    print("done")
+    return client
 
 def move(positions):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,24 +50,31 @@ def move(positions):
     s.close()
 
 def freedrive():
+    print("connection successful")
+    # client = connect()
+    
     client.send("freedrive".encode("utf-8"))
 
 def end_freedrive():
+    client = connect()
     client.send("end_freedrive".encode("utf-8"))
 
 def return_pose():
+    client = connect()
     client.send("return_pose".encode("utf-8"))
     bytes = client.recv(1024)
     str = bytes.decode("utf-8")
     return str
 
 def return_joint_positions():
+    client = connect()
     client.send("return_joint_positions".encode("utf-8"))
     bytes = client.recv(1024)
     str = bytes.decode("utf-8")
     return str
 
 def teach():
+    client = connect()
     positions = []
     while True:
         x = input()
