@@ -1,0 +1,17 @@
+# Makefile for CS 453
+
+SRC = imginfo.cpp readwrite.cpp imgdiff.cpp
+
+IMGLIB = /home/schar/cs453/imageLib
+ARCH := $(shell arch)
+
+CC = g++
+CPPFLAGS = -O2 -W -Wall -I$(IMGLIB)
+LDLIBS = -L$(IMGLIB) -lImg.$(ARCH) -lpng -lz
+
+BIN = $(SRC:.cpp=)
+
+all: $(BIN)
+
+clean: 
+	rm -f $(BIN)
