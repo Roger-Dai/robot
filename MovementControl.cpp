@@ -17,11 +17,11 @@ int server();
 int restore();
 int next();
 int powerdown();
-int move_pose(string pose, float a, float v);
-int move_joints(string pose, float a, float v);
-int linear_x(float d, float a = 0.3, float v = 0.3);
-int linear_y(float d, float a = 0.3, float v = 0.3);
-int linear_z(float d, float a = 0.3, float v = 0.3);
+int move_pose(string pose, float a, float v, float t = 2);
+int move_joints(string pose, float a, float v, float t = 2);
+int linear_x(float d, float a = 0.3, float v = 0.3, float t = 2);
+int linear_y(float d, float a = 0.3, float v = 0.3, float t = 2);
+int linear_z(float d, float a = 0.3, float v = 0.3, float t = 2);
 
 
 int main()
@@ -182,7 +182,7 @@ int restore()
     int client_sock;
     client_sock = client();
     
-    char original[1024] = "movel(p[0.253382,-0.0770761,0.410262,-1.99486,-0.096691,-1.87748], a = 0.5, v = 0.5)\n";
+    char original[1024] = "movel(p[0.253382,-0.0770761,0.410262,-1.99486,-0.096691,-1.87748], a = 0.5, v = 0.5, t = 1)\n";
     int result;
     result = send(client_sock, original, 1024, 0);
     if (result < 0) {
@@ -196,7 +196,7 @@ int next()
 {
     int client_sock;
     client_sock = client();
-    char next[1024] = "movel(p[0.455506,-0.0263883,0.405709,-2.08937,0.139225,-2.01385], a = 0.5, v = 0.5)\n";
+    char next[1024] = "movel(p[0.455506,-0.0263883,0.405709,-2.08937,0.139225,-2.01385], a = 0.5, v = 0.5, t = 1)\n";
     int result;
 
     result = send(client_sock, next, 1024, 0);
@@ -222,14 +222,14 @@ int powerdown()
     return 0;
 }
 
-int move_pose(string pose, float a, float v)
+int move_pose(string pose, float a, float v, float t)
 {
     int client_sock;
     client_sock = client();
     string s;
     int result;
 
-    s = "movel(p[" + pose + "], a = " + to_string(a) + ", v = " + to_string(v) + ")\n";
+    s = "movel(p[" + pose + "], a = " + to_string(a) + ", v = " + to_string(v) + ", t = " + to_string(t) + ")\n";
     printf("%s\n",s.c_str());
     int n = s.length(); 
     char command[n+1]; 
@@ -242,14 +242,14 @@ int move_pose(string pose, float a, float v)
     return 0;
 }   
 
-int move_joints(string pose, float a, float v)
+int move_joints(string pose, float a, float v, float t)
 {
     int client_sock;
     client_sock = client();
     string s;
     int result;
 
-    s = "movej([" + pose + "], a = " + to_string(a) + ", v = " + to_string(v) + ")\n";
+    s = "movej([" + pose + "], a = " + to_string(a) + ", v = " + to_string(v) + ", t = " + to_string(t) + ")\n";
     printf("%s\n",s.c_str());
     int n = s.length(); 
     char command[n+1]; 
@@ -262,14 +262,14 @@ int move_joints(string pose, float a, float v)
     return 0;
 }  
 
-int linear_x(float d, float a, float v)
+int linear_x(float d, float a, float v, float t)
 {
     int client_sock;
     client_sock = client();
     string s;
     int result;
 
-    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0,0.0," + to_string(d) + ",0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ")\nend\n";
+    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0,0.0," + to_string(d) + ",0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ", t = " + to_string(t) + ")\nend\n";
     printf("%s\n",s.c_str());
     int n = s.length(); 
     char command[n+1]; 
@@ -282,14 +282,14 @@ int linear_x(float d, float a, float v)
     return 0;
 } 
 
-int linear_y(float d, float a, float v)
+int linear_y(float d, float a, float v, float t)
 {
     int client_sock;
     client_sock = client();
     string s;
     int result;
 
-    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0," + to_string(d) + ",0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ")\nend\n";
+    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0," + to_string(d) + ",0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ", t = " + to_string(t) + ")\nend\n";
     printf("%s\n",s.c_str());
     int n = s.length(); 
     char command[n+1]; 
@@ -302,14 +302,14 @@ int linear_y(float d, float a, float v)
     return 0;
 } 
 
-int linear_z(float d, float a, float v)
+int linear_z(float d, float a, float v, float t)
 {
     int client_sock;
     client_sock = client();
     string s;
     int result;
 
-    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[" + to_string(d) + ",0.0,0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ")\nend\n";
+    s = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[" + to_string(d) + ",0.0,0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = " + to_string(a) + ", v = " + to_string(v) + ", t = " + to_string(t) + ")\nend\n";
     printf("%s\n",s.c_str());
     int n = s.length(); 
     char command[n+1]; 
