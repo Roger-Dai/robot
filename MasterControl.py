@@ -404,6 +404,8 @@ def arm():
 
 if __name__ == "__main__":
     counter = 0
+    if len(sys.argv) != 2:
+        print("usage: python3 MasterControl.py (c|n)")
     if sys.argv[1] == "c":
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
