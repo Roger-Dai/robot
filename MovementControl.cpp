@@ -320,4 +320,4 @@ int linear_z(float d, float a, float v, float t)
         printf("\nSending Failed\n");
     }
     return 0;
-} 
+}

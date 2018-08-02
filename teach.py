@@ -23,13 +23,15 @@ while True:
         break
     else:
         y = x + "\n"        
-    client.send(y.encode("utf-8"))
     if x == "next":
-        print("run")
+        client.send("return_pose\n".encode("utf-8"))
         bytes = client.recv(1024)
-        print("break")
         str = bytes.decode("utf-8")
         positions.append(str)
+        # client.send("return_joint_positions\n".encode("utf-8"))
+        # bytes = client.recv(1024)
+        # str = bytes.decode("utf-8")
+        # positions.append(str)
     print(positions)
 
 
@@ -38,6 +40,6 @@ client.close()
 print(positions)
 print("Teach mode finished")
 
-RobotCommands.move(positions)
+
 print("Finished!")
 

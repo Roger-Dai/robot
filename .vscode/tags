@@ -1,0 +1,864 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABSPATH	../opencv3-paths-fix.py	/^ABSPATH = "\/usr\/local\/lib\/"  # absolute path to relative libraries$/;"	kind:variable	line:5
+ADDITIONAL_INFO	../Fall Research 2017/python/ur5.py	/^            ADDITIONAL_INFO = 8$/;"	kind:variable	line:50
+ANIMALS	../SendFunc.py	/^ANIMALS = "def move():\\nmovej(p[-0.0948469,-0.764105,0.182308,-0.0865267,0.305646,-1.14355], a = 0.3, v = 0.3)\\nmovej(p[0.0327354,-0.559574,0.170428,-0.0235174,0.37689,-1.54315], a = 0.3, v = 0.3)\\nmovej(p[0.190058,-0.38373,0.175607,-0.0212344,0.432451,-1.80717], a = 0.3, v = 0.3)\\nmovej(p[0.360815,-0.269423,0.169429,0.0845107,0.40807,-2.16599], a = 0.3, v = 0.3)\\nmovej(p[0.564781,-0.241304,0.171022,0.116417,0.360269,-2.45988], a = 0.3, v = 0.3)\\nend\\n"$/;"	kind:variable	line:34
+API	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+API	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+APPLICATION_DIR	../Fall Research 2017/python/Python/robolink.py	/^    APPLICATION_DIR = 'C:\/RoboDK\/bin\/RoboDK.exe'    # file path to the robodk program (executable)$/;"	kind:variable	line:149
+ARC	../MasterControl.py	/^ARC = "def Arc():\\nCurPos = get_actual_tcp_pose()\\nTarget = pose_trans(CurPos, p[0,0,0.001,0,0,0])\\nVia = pose_trans(CurPos, p[0,0.2,0.2,0,0,0])\\nmovec(Via, Target, a = 0.1, v = 0.1)\\nend\\n"$/;"	kind:variable	line:328
+ARC	../SendFunc.py	/^ARC = "def Arc():\\nCurPos = get_actual_tcp_pose()\\nTarget = pose_trans(CurPos, p[0,0,0.001,0,0,0])\\nVia = pose_trans(CurPos, p[0,0.15,0.15,0,0,0])\\nmovec(Via, Target, a = 0.1, v = 0.1)\\nend\\n"$/;"	kind:variable	line:15
+ARGUMENTS	../Fall Research 2017/python/Python/robolink.py	/^    ARGUMENTS = None        # Command line arguments to RoboDK, such as \/NOSPLASH \/NOSHOW to not display RoboDK. It has no effect if RoboDK is already running.$/;"	kind:variable	line:155
+AUTO_UPDATE	../Fall Research 2017/python/Python/robolink.py	/^    AUTO_UPDATE = 0         # if AUTO_UPDATE is zero, the scene is rendered after every function call$/;"	kind:variable	line:151
+AddCurve	../Fall Research 2017/python/Python/robolink.py	/^    def AddCurve(self, curve_points, add_to_ref=False, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:1729
+AddCurve	../Fall Research 2017/python/Python/robolink.py	/^    def AddCurve(self, curve_points, reference_object=0, add_to_ref=False, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:732
+AddFile	../Fall Research 2017/python/Python/robolink.py	/^    def AddFile(self, filename):$/;"	kind:member	line:1410
+AddFile	../Fall Research 2017/python/Python/robolink.py	/^    def AddFile(self, filename, parent=0):$/;"	kind:member	line:695
+AddFrame	../Fall Research 2017/python/Python/robolink.py	/^    def AddFrame(self, name, itemparent=0):$/;"	kind:member	line:837
+AddGeometry	../Fall Research 2017/python/Python/robolink.py	/^    def AddGeometry(self, fromitem, pose):$/;"	kind:member	line:1426
+AddMillingProject	../Fall Research 2017/python/Python/robolink.py	/^    def AddMillingProject(self, name='Milling settings', itemrobot=0):$/;"	kind:member	line:865
+AddPoints	../Fall Research 2017/python/Python/robolink.py	/^    def AddPoints(self, points, add_to_ref=False, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:1736
+AddPoints	../Fall Research 2017/python/Python/robolink.py	/^    def AddPoints(self, points, reference_object=0, add_to_ref=False, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:754
+AddProgram	../Fall Research 2017/python/Python/robolink.py	/^    def AddProgram(self, name, itemrobot=0):$/;"	kind:member	line:851
+AddShape	../Fall Research 2017/python/Python/robolink.py	/^    def AddShape(self, triangle_points):$/;"	kind:member	line:1724
+AddShape	../Fall Research 2017/python/Python/robolink.py	/^    def AddShape(self, triangle_points, add_to=0):$/;"	kind:member	line:714
+AddStation	../Fall Research 2017/python/Python/robolink.py	/^    def AddStation(self, name="New Station"):$/;"	kind:member	line:809
+AddTarget	../Fall Research 2017/python/Python/robolink.py	/^    def AddTarget(self, name, itemparent=0, itemrobot=0):$/;"	kind:member	line:821
+AddTool	../Fall Research 2017/python/Python/robolink.py	/^    def AddTool(self, tool_pose, tool_name = 'New TCP'):$/;"	kind:member	line:2001
+Adept_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def Adept_2_Pose(xyzrpw):$/;"	kind:function	line:493
+AngleConversion.py	../AngleConversion.py	1;"	kind:file	line:1
+AttachClosest	../Fall Research 2017/python/Python/robolink.py	/^    def AttachClosest(self):$/;"	kind:member	line:1471
+AxisAngle	../Fall Research 2017/python/ur5.py	/^        def AxisAngle(self):$/;"	kind:member	line:19
+Busy	../Fall Research 2017/python/Python/robolink.py	/^    def Busy(self):$/;"	kind:member	line:2302
+CALIBRATE_TCP_BY_PLANE	../Fall Research 2017/python/Python/robolink.py	/^CALIBRATE_TCP_BY_PLANE = 1$/;"	kind:variable	line:100
+CALIBRATE_TCP_BY_POINT	../Fall Research 2017/python/Python/robolink.py	/^CALIBRATE_TCP_BY_POINT = 0$/;"	kind:variable	line:99
+CALIBRATION_DATA	../Fall Research 2017/python/ur5.py	/^            CALIBRATION_DATA = 9$/;"	kind:variable	line:51
+CARTESIAN_INFO	../Fall Research 2017/python/ur5.py	/^            CARTESIAN_INFO = 4$/;"	kind:variable	line:46
+COM	../Fall Research 2017/python/Python/robolink.py	/^    COM = None              # tcpip com$/;"	kind:variable	line:153
+CONFIGURATION_DATA	../Fall Research 2017/python/ur5.py	/^            CONFIGURATION_DATA = 6$/;"	kind:variable	line:48
+CREATE_TARGETS	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^CREATE_TARGETS = True$/;"	kind:variable	line:19
+CREATE_TARGETS	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^CREATE_TARGETS = True$/;"	kind:variable	line:19
+CURVE	../MasterControl.py	/^CURVE = "def SmoothSquare():\\nCurPos≔get_forward_kin()\\nheight≔100\\nwidth≔100\\nblend_radius≔50\\nwhile (True):\\ncorner_1=pose_trans(CurPos,p[width\/1000.0,0.0,0.0,0.0,0.0,0.0])\\nmovel(corner_1,1.2,0.25,blend_radius\/1000.0)\\ncorner_2=pose_trans(CurPos,p[width\/1000.0,height\/1000.0,0.0,0.0,0.0,0.0])\\nmovel(corner_2,1.2,0.25,blend_radius\/1000.0)\\ncorner_3=pose_trans(CurPos,p[0.0,height\/1000.0,0.0,0.0,0.0,0.0])\\nmovel(corner_3,1.2,0.25,blend_radius\/1000.0)\\nmovel(CurPos,1.2,0.25,blend_radius\/1000.0)\\nend\\nend\\n"$/;"	kind:variable	line:329
+CalibrateTCP	../Fall Research 2017/python/Python/robolink.py	/^    def CalibrateTCP(self, poses_xyzwpr, format=EULER_RX_RY_RZ, algorithm=CALIBRATE_TCP_BY_POINT):$/;"	kind:member	line:1202
+Cam2D_Add	../Fall Research 2017/python/Python/robolink.py	/^    def Cam2D_Add(self, item_object, cam_params=""):$/;"	kind:member	line:1253
+Cam2D_Close	../Fall Research 2017/python/Python/robolink.py	/^    def Cam2D_Close(self, cam_handle=0):$/;"	kind:member	line:1279
+Cam2D_SetParams	../Fall Research 2017/python/Python/robolink.py	/^    def Cam2D_SetParams(self, params, cam_handle=0):$/;"	kind:member	line:1295
+Cam2D_Snapshot	../Fall Research 2017/python/Python/robolink.py	/^    def Cam2D_Snapshot(self, file_save_img, cam_handle=0):$/;"	kind:member	line:1266
+Childs	../Fall Research 2017/python/Python/robolink.py	/^    def Childs(self):$/;"	kind:member	line:1515
+CloseRoboDK	../Fall Research 2017/python/Python/robolink.py	/^    def CloseRoboDK(self):$/;"	kind:member	line:635
+Collision	../Fall Research 2017/python/Python/robolink.py	/^    def Collision(self, item1, item2):$/;"	kind:member	line:948
+Collision	../Fall Research 2017/python/Python/robolink.py	/^    def Collision(self, item_check):$/;"	kind:member	line:1418
+Collision_Line	../Fall Research 2017/python/Python/robolink.py	/^    def Collision_Line(self, p1, p2, ref=eye(4)):$/;"	kind:member	line:1104
+Collisions	../Fall Research 2017/python/Python/robolink.py	/^    def Collisions(self):$/;"	kind:member	line:939
+Color	../Fall Research 2017/python/Python/robolink.py	/^    def Color(self):$/;"	kind:member	line:1696
+Comau_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def Comau_2_Pose(xyzrpw):$/;"	kind:function	line:535
+Connect	../Fall Research 2017/python/Python/robolink.py	/^    def Connect(self):$/;"	kind:member	line:497
+Connect	../Fall Research 2017/python/Python/robolink.py	/^    def Connect(self, robot_ip = ''):$/;"	kind:member	line:2096
+Connect	../Fall Research 2017/python/ur5.py	/^    def Connect(self):$/;"	kind:member	line:22
+ConnectSafe	../Fall Research 2017/python/Python/robolink.py	/^    def ConnectSafe(self, robot_ip = '', max_attempts=5, wait_connection=4):$/;"	kind:member	line:2109
+ConnectedState	../Fall Research 2017/python/Python/robolink.py	/^    def ConnectedState(self):$/;"	kind:member	line:2177
+ConnectionParams	../Fall Research 2017/python/Python/robolink.py	/^    def ConnectionParams(self):$/;"	kind:member	line:2140
+Copy	../Fall Research 2017/python/Python/robolink.py	/^    def Copy(self):$/;"	kind:member	line:1401
+Copy	../Fall Research 2017/python/Python/robolink.py	/^    def Copy(self, item):$/;"	kind:member	line:667
+DOWN	../MasterControl.py	/^DOWN = "def Move():\\nmovel(p[0.253388,-0.0770718,0.410261,-1.99481,-0.0967188,-1.8774], a = 50, v = 25)\\nend\\n"$/;"	kind:variable	line:18
+DateCreated	../Fall Research 2017/python/Python/robodk.py	/^def DateCreated(filepath, stringformat=False):$/;"	kind:function	line:72
+DateModified	../Fall Research 2017/python/Python/robodk.py	/^def DateModified(filepath, stringformat=False):$/;"	kind:function	line:64
+Delete	../Fall Research 2017/python/Python/robolink.py	/^    def Delete(self):$/;"	kind:member	line:1436
+DetachAll	../Fall Research 2017/python/Python/robolink.py	/^    def DetachAll(self, parent=0):$/;"	kind:member	line:1494
+DetachClosest	../Fall Research 2017/python/Python/robolink.py	/^    def DetachClosest(self, parent=0):$/;"	kind:member	line:1482
+DirExists	../Fall Research 2017/python/Python/robodk.py	/^def DirExists(folder):$/;"	kind:function	line:80
+Disconnect	../Fall Research 2017/python/Python/robolink.py	/^    def Disconnect(self):$/;"	kind:member	line:2190
+Disconnect	../Fall Research 2017/python/Python/robolink.py	/^    def Disconnect(self):$/;"	kind:member	line:489
+Displacement	../SendFunc.py	/^Displacement = "def Move():\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0,0,-0.5,0,0,0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.3, v = 0.5)\\nend\\n"$/;"	kind:variable	line:12
+EULER_QUEATERNION	../Fall Research 2017/python/Python/robolink.py	/^EULER_QUEATERNION = 6 # ABB Rapid$/;"	kind:variable	line:115
+EULER_RX_RY_RZ	../Fall Research 2017/python/Python/robolink.py	/^EULER_RX_RY_RZ    = 4 # Fanuc, Kuka, Motoman, Nachi$/;"	kind:variable	line:113
+EULER_RX_RYp_RZpp	../Fall Research 2017/python/Python/robolink.py	/^EULER_RX_RYp_RZpp = 0 # generic$/;"	kind:variable	line:109
+EULER_RZ_RXp_RZpp	../Fall Research 2017/python/Python/robolink.py	/^EULER_RZ_RXp_RZpp = 3 # CATIA, SolidWorks$/;"	kind:variable	line:112
+EULER_RZ_RY_RX	../Fall Research 2017/python/Python/robolink.py	/^EULER_RZ_RY_RX    = 5 # CRS$/;"	kind:variable	line:114
+EULER_RZ_RYp_RXpp	../Fall Research 2017/python/Python/robolink.py	/^EULER_RZ_RYp_RXpp = 1 # ABB RobotStudio$/;"	kind:variable	line:110
+EULER_RZ_RYp_RZpp	../Fall Research 2017/python/Python/robolink.py	/^EULER_RZ_RYp_RZpp = 2 # Kawasaki, Adept, Staubli$/;"	kind:variable	line:111
+FEATURE_CURVE	../Fall Research 2017/python/Python/robolink.py	/^FEATURE_CURVE=2$/;"	kind:variable	line:136
+FEATURE_NONE	../Fall Research 2017/python/Python/robolink.py	/^FEATURE_NONE=0$/;"	kind:variable	line:134
+FEATURE_POINT	../Fall Research 2017/python/Python/robolink.py	/^FEATURE_POINT=3$/;"	kind:variable	line:137
+FEATURE_SURFACE	../Fall Research 2017/python/Python/robolink.py	/^FEATURE_SURFACE=1$/;"	kind:variable	line:135
+FILE_OPENSTATION	../Fall Research 2017/python/Python/robolink.py	/^FILE_OPENSTATION = 'FILE_OPENSTATION'$/;"	kind:variable	line:74
+FIRST	../SendFunc.py	/^FIRST = "movej(p[0.190058,-0.38373,0.175607,-0.0212344,0.432451,-1.80717], a = 0.3, v = 0.3)\\n"$/;"	kind:variable	line:29
+FORCE_MODE_DATA	../Fall Research 2017/python/ur5.py	/^            FORCE_MODE_DATA = 7$/;"	kind:variable	line:49
+FileExists	../Fall Research 2017/python/Python/robodk.py	/^def FileExists(file):$/;"	kind:function	line:84
+FilterProgram	../Fall Research 2017/python/Python/robolink.py	/^    def FilterProgram(self, filestr):$/;"	kind:member	line:2364
+FilterTarget	../Fall Research 2017/python/Python/robolink.py	/^    def FilterTarget(self, pose, joints_approx=None):$/;"	kind:member	line:2078
+Finish	../Fall Research 2017/python/Python/robolink.py	/^    def Finish(self):$/;"	kind:member	line:493
+GeometryPose	../Fall Research 2017/python/Python/robolink.py	/^    def GeometryPose(self):$/;"	kind:member	line:1630
+GetPoints	../Fall Research 2017/python/Python/robolink.py	/^    def GetPoints(self, feature_type=FEATURE_SURFACE, feature_id=0):$/;"	kind:member	line:1767
+HIGH	../MasterControl.py	/^HIGH = "def Move():\\nmovej(p[0.150559,-0.377884,0.800775,0.819544,1.30144,0.823734], a = 10, v = 10)\\nend\\n"$/;"	kind:variable	line:21
+HOST	../Clutter/getpos.py	/^HOST = '140.233.20.115'$/;"	kind:variable	line:4
+HOST	../Fall Research 2017/duplicate.py	/^HOST = "140.233.20.115"$/;"	kind:variable	line:4
+HOST	../Fall Research 2017/urclienttest.py	/^HOST = "140.233.20.115"$/;"	kind:variable	line:4
+HOST	../MasterControl.py	/^HOST = '140.233.20.115'$/;"	kind:variable	line:8
+HOST	../RobotCommands.py	/^HOST = '140.233.20.115'$/;"	kind:variable	line:6
+HOST	../SendFunc.py	/^HOST = '140.233.20.115'$/;"	kind:variable	line:3
+HOST	../teach.py	/^HOST = '140.233.20.115'$/;"	kind:variable	line:9
+HideRoboDK	../Fall Research 2017/python/Python/robolink.py	/^    def HideRoboDK(self):$/;"	kind:member	line:628
+Htool	../Fall Research 2017/python/Python/robolink.py	/^    def Htool(self):$/;"	kind:member	line:1989
+INSTRUCTION_CALL_PROGRAM	../Fall Research 2017/python/Python/robolink.py	/^INSTRUCTION_CALL_PROGRAM = 0$/;"	kind:variable	line:128
+INSTRUCTION_COMMENT	../Fall Research 2017/python/Python/robolink.py	/^INSTRUCTION_COMMENT = 3$/;"	kind:variable	line:131
+INSTRUCTION_INSERT_CODE	../Fall Research 2017/python/Python/robolink.py	/^INSTRUCTION_INSERT_CODE = 1$/;"	kind:variable	line:129
+INSTRUCTION_START_THREAD	../Fall Research 2017/python/Python/robolink.py	/^INSTRUCTION_START_THREAD = 2$/;"	kind:variable	line:130
+INS_TYPE_CHANGEFRAME	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_CHANGEFRAME = 3$/;"	kind:variable	line:58
+INS_TYPE_CHANGEROBOT	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_CHANGEROBOT = 5$/;"	kind:variable	line:60
+INS_TYPE_CHANGESPEED	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_CHANGESPEED = 2$/;"	kind:variable	line:57
+INS_TYPE_CHANGETOOL	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_CHANGETOOL = 4$/;"	kind:variable	line:59
+INS_TYPE_CODE	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_CODE = 8$/;"	kind:variable	line:63
+INS_TYPE_EVENT	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_EVENT = 7$/;"	kind:variable	line:62
+INS_TYPE_INVALID	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_INVALID = -1$/;"	kind:variable	line:54
+INS_TYPE_MOVE	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_MOVE = 0$/;"	kind:variable	line:55
+INS_TYPE_MOVEC	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_MOVEC = 1$/;"	kind:variable	line:56
+INS_TYPE_PAUSE	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_PAUSE = 6$/;"	kind:variable	line:61
+INS_TYPE_PRINT	../Fall Research 2017/python/Python/robolink.py	/^INS_TYPE_PRINT = 9$/;"	kind:variable	line:64
+IP	../Fall Research 2017/python/Python/robolink.py	/^    IP = 'localhost'        # IP address of the simulator (localhost if it is the same computer), otherwise, use RL = Robolink('yourip') to set to a different IP$/;"	kind:variable	line:154
+ITEM_TYPE_BALLBARVALIDATION	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_BALLBARVALIDATION=12$/;"	kind:variable	line:49
+ITEM_TYPE_CALIBPROJECT	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_CALIBPROJECT=13$/;"	kind:variable	line:50
+ITEM_TYPE_FRAME	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_FRAME=3$/;"	kind:variable	line:41
+ITEM_TYPE_INSTRUCTION	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_INSTRUCTION=9$/;"	kind:variable	line:46
+ITEM_TYPE_MACHINING	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_MACHINING=11$/;"	kind:variable	line:48
+ITEM_TYPE_OBJECT	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_OBJECT=5$/;"	kind:variable	line:43
+ITEM_TYPE_PROGRAM	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_PROGRAM=8$/;"	kind:variable	line:45
+ITEM_TYPE_PROGRAM_PYTHON	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_PROGRAM_PYTHON=10$/;"	kind:variable	line:47
+ITEM_TYPE_ROBOT	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_ROBOT=2$/;"	kind:variable	line:40
+ITEM_TYPE_STATION	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_STATION=1$/;"	kind:variable	line:39
+ITEM_TYPE_TARGET	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_TARGET=6$/;"	kind:variable	line:44
+ITEM_TYPE_TOOL	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_TOOL=4$/;"	kind:variable	line:42
+ITEM_TYPE_VALID_ISO9283	../Fall Research 2017/python/Python/robolink.py	/^ITEM_TYPE_VALID_ISO9283=14$/;"	kind:variable	line:51
+Image	../RepeatabilityTest/flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+Image	../flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+ImageChops	../RepeatabilityTest/flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+ImageChops	../flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+ImageTk	../RepeatabilityTest/flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+ImageTk	../flip.py	/^from PIL import Image, ImageTk, ImageChops$/;"	kind:namespace	line:21
+Instruction	../Fall Research 2017/python/Python/robolink.py	/^    def Instruction(self, ins_id=-1):$/;"	kind:member	line:2535
+InstructionCount	../Fall Research 2017/python/Python/robolink.py	/^    def InstructionCount(self):$/;"	kind:member	line:2525
+InstructionList	../Fall Research 2017/python/Python/robolink.py	/^    def InstructionList(self):$/;"	kind:member	line:2590
+InstructionListJoints	../Fall Research 2017/python/Python/robolink.py	/^    def InstructionListJoints(self, mm_step=10, deg_step=5, save_to_file = None):$/;"	kind:member	line:2603
+IsInside	../Fall Research 2017/python/Python/robolink.py	/^    def IsInside(self, object):$/;"	kind:member	line:1422
+IsInside	../Fall Research 2017/python/Python/robolink.py	/^    def IsInside(self, object_inside, object):$/;"	kind:member	line:929
+Item	../Fall Research 2017/python/Python/robolink.py	/^    def Item(self, name, itemtype=None):$/;"	kind:member	line:546
+Item	../Fall Research 2017/python/Python/robolink.py	/^class Item():$/;"	kind:class	line:1359
+ItemList	../Fall Research 2017/python/Python/robolink.py	/^    def ItemList(self, filter=None, list_names=True):$/;"	kind:member	line:569
+ItemUserPick	../Fall Research 2017/python/Python/robolink.py	/^    def ItemUserPick(self, message="Pick one item", itemtype=None):$/;"	kind:member	line:602
+JOINT_DATA	../Fall Research 2017/python/ur5.py	/^            JOINT_DATA = 1$/;"	kind:variable	line:43
+JointLimits	../Fall Research 2017/python/Python/robolink.py	/^    def JointLimits(self):$/;"	kind:member	line:1889
+JointPoses	../Fall Research 2017/python/Python/robolink.py	/^    def JointPoses(self, joints = None):$/;"	kind:member	line:1834
+Joints	../Fall Research 2017/python/Python/robolink.py	/^    def Joints(self):$/;"	kind:member	line:1820
+Joints	../Fall Research 2017/python/Python/robolink.py	/^    def Joints(self, robot_item_list):$/;"	kind:member	line:1167
+JointsConfig	../Fall Research 2017/python/Python/robolink.py	/^    def JointsConfig(self, joints):$/;"	kind:member	line:2029
+JointsHome	../Fall Research 2017/python/Python/robolink.py	/^    def JointsHome(self):$/;"	kind:member	line:1855
+KINEMATICS_INFO	../Fall Research 2017/python/ur5.py	/^            KINEMATICS_INFO = 5$/;"	kind:variable	line:47
+KUKA_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def KUKA_2_Pose(xyzrpw):$/;"	kind:function	line:479
+LIBPATHS	../opencv3-paths-fix.py	/^LIBPATHS = ['\/usr\/local\/lib\/python2.7\/site-packages\/cv2.so', '\/usr\/local\/lib\/libopencv*'] $/;"	kind:variable	line:7
+LOW	../MasterControl.py	/^LOW = "def Move():\\nmovej(p[0.246217,0.0843333,0.360932,-1.32081,-1.50092,-2.13922], a = 10, v = 10)\\nend\\n"$/;"	kind:variable	line:20
+LaserTracker_Measure	../Fall Research 2017/python/Python/robolink.py	/^    def LaserTracker_Measure(self, estimate=[0,0,0], search=False):$/;"	kind:member	line:1075
+LoadList	../Fall Research 2017/python/Python/robodk.py	/^def LoadList(strfile, separator=',', codec='utf-8'):$/;"	kind:function	line:313
+LoadMat	../Fall Research 2017/python/Python/robodk.py	/^def LoadMat(strfile, separator=','):$/;"	kind:function	line:332
+MASTERBOARD_DATA	../Fall Research 2017/python/ur5.py	/^            MASTERBOARD_DATA = 3$/;"	kind:variable	line:45
+MOVE	../SendFunc.py	/^MOVE = "def move():\\nmovej(p[0.482794,-0.369096,0.210963,0.273296,0.510005,-2.42687], a = 0.3, v = 0.3)\\nmovej(p[0.355939,-0.376458,0.26598,0.307452,0.489899,-2.18725], a = 0.3, v = 0.3)\\nmovej(p[0.268856,-0.421868,0.250672,0.163048,0.525763,-1.99444], a = 0.3, v = 0.3)\\nmovej(p[0.16055,-0.484803,0.252628,0.0741555,0.451003,-1.74087], a = 0.3, v = 0.3)\\nmovej(p[0.068226,-0.585313,0.258928,-0.0215307,0.455378,-1.45914], a = 0.3, v = 0.3)\\nend\\n"$/;"	kind:variable	line:27
+MOVE_TYPE_CIRCULAR	../Fall Research 2017/python/Python/robolink.py	/^MOVE_TYPE_CIRCULAR = 3$/;"	kind:variable	line:70
+MOVE_TYPE_INVALID	../Fall Research 2017/python/Python/robolink.py	/^MOVE_TYPE_INVALID = -1$/;"	kind:variable	line:67
+MOVE_TYPE_JOINT	../Fall Research 2017/python/Python/robolink.py	/^MOVE_TYPE_JOINT = 1$/;"	kind:variable	line:68
+MOVE_TYPE_LINEAR	../Fall Research 2017/python/Python/robolink.py	/^MOVE_TYPE_LINEAR = 2$/;"	kind:variable	line:69
+MakeProgram	../Fall Research 2017/python/Python/robolink.py	/^    def MakeProgram(self, filestr='', run_mode = RUNMODE_MAKE_ROBOTPROG):$/;"	kind:member	line:2380
+MasterControl.py	../MasterControl.py	1;"	kind:file	line:1
+Mat	../Fall Research 2017/python/Python/robodk.py	/^class Mat(object):$/;"	kind:class	line:812
+MatrixError	../Fall Research 2017/python/Python/robodk.py	/^class MatrixError(Exception):$/;"	kind:class	line:808
+MessageBox	../Fall Research 2017/python/Python/robodk.py	/^class MessageBox(object):$/;"	kind:class	line:1387
+Motoman_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def Motoman_2_Pose(xyzwpr):$/;"	kind:function	line:453
+MoveC	../Fall Research 2017/python/Python/robolink.py	/^    def MoveC(self, target1, target2, blocking=True):$/;"	kind:member	line:2213
+MoveC	../Fall Research 2017/python/Python/robolink.py	/^    def MoveC(self, target1, target2, itemrobot, blocking=True):$/;"	kind:member	line:404
+MoveJ	../Fall Research 2017/python/Python/robolink.py	/^    def MoveJ(self, target, blocking=True):$/;"	kind:member	line:2201
+MoveJ_Collision	../Fall Research 2017/python/Python/robolink.py	/^    def MoveJ_Collision(self, j1, j2, minstep_deg=-1):$/;"	kind:member	line:2219
+MoveL	../Fall Research 2017/python/Python/robolink.py	/^    def MoveL(self, target, blocking=True):$/;"	kind:member	line:2207
+MoveL	../Fall Research 2017/python/ur5.py	/^    def MoveL(self, pose, a=1, v=1):$/;"	kind:member	line:29
+MoveL_Collision	../Fall Research 2017/python/Python/robolink.py	/^    def MoveL_Collision(self, j1, pose, minstep_deg=-1):$/;"	kind:member	line:2236
+NEXT	../MasterControl.py	/^NEXT = "movel(p[0.455506,-0.0263883,0.405709,-2.08937,0.139225,-2.01385], a = 0.5, v = 0.5)\\n"$/;"	kind:variable	line:17
+NEXT	../SendFunc.py	/^NEXT = "def Move():\\nset_digital_out(1,True)\\nmovej([2.107288888888889, -2.0619333333333336, 1.953428888888889, -6.09665888888889, 0.27998333333333336, -4.548638888888889], a=1, v=1)\\nset_digital_out(1,False)\\nend\\n"$/;"	kind:variable	line:10
+Nachi_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def Nachi_2_Pose(xyzwpr):$/;"	kind:function	line:554
+Name	../Fall Research 2017/python/Python/robolink.py	/^    def Name(self):$/;"	kind:member	line:1554
+ORIGINAL	../MasterControl.py	/^ORIGINAL = "movel(p[0.253382,-0.0770761,0.410262,-1.99486,-0.096691,-1.87748], a = 0.3, v = 0.3)\\n"$/;"	kind:variable	line:13
+ORIGINAL	../SendFunc.py	/^ORIGINAL = "movel(p[0.253382,-0.0770761,0.410262,-1.99486,-0.096691,-1.87748], a = 0.3, v = 0.3)\\n"$/;"	kind:variable	line:22
+ObjectLink	../Fall Research 2017/python/Python/robolink.py	/^    def ObjectLink(self, link_id=0):$/;"	kind:member	line:1866
+Offset	../Fall Research 2017/python/Python/robodk.py	/^    def Offset(self, x, y, z, rx=0,ry=0,rz=0):$/;"	kind:member	line:1107
+Offset	../Fall Research 2017/python/Python/robodk.py	/^def Offset(target_pose, x, y, z, rx=0,ry=0,rz=0):$/;"	kind:function	line:223
+Only	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+PATH_DESKTOP	../Fall Research 2017/python/Python/robolink.py	/^PATH_DESKTOP = 'PATH_DESKTOP'$/;"	kind:variable	line:75
+PATH_OPENSTATION	../Fall Research 2017/python/Python/robolink.py	/^PATH_OPENSTATION = 'PATH_OPENSTATION'$/;"	kind:variable	line:73
+PORT	../Clutter/getpos.py	/^PORT = 30000$/;"	kind:variable	line:5
+PORT	../Fall Research 2017/duplicate.py	/^PORT = 30001$/;"	kind:variable	line:6
+PORT	../Fall Research 2017/python/Python/robolink.py	/^    PORT = -1$/;"	kind:variable	line:158
+PORT	../Fall Research 2017/urclienttest.py	/^PORT = 30000$/;"	kind:variable	line:6
+PORT	../MasterControl.py	/^PORT = 30000$/;"	kind:variable	line:9
+PORT	../SendFunc.py	/^PORT = 30001$/;"	kind:variable	line:4
+PORT	../teach.py	/^PORT = 30000$/;"	kind:variable	line:10
+PORT0	../RobotCommands.py	/^PORT0 = 30000$/;"	kind:variable	line:7
+PORT1	../RobotCommands.py	/^PORT1 = 30001$/;"	kind:variable	line:8
+PORT2	../MasterControl.py	/^PORT2 = 30002$/;"	kind:variable	line:11
+PORT_END	../Fall Research 2017/python/Python/robolink.py	/^    PORT_END = 20500        # port to stop looking for app connection$/;"	kind:variable	line:157
+PORT_START	../Fall Research 2017/python/Python/robolink.py	/^    PORT_START = 20500      # port to start looking for app connection$/;"	kind:variable	line:156
+POSE	../MasterControl.py	/^POSE = "def Pose():\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,0.0,0.2032,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.5, v = 0.5)\\nend\\n"$/;"	kind:variable	line:23
+POSE	../SendFunc.py	/^POSE = "def Pose():\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,0.0,0.2032,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.5, v = 0.5)\\nend\\n"$/;"	kind:variable	line:14
+PREFIX	../opencv3-paths-fix.py	/^PREFIX = 'sudo install_name_tool -change '$/;"	kind:variable	line:9
+PROGRAM_RUN_ON_ROBOT	../Fall Research 2017/python/Python/robolink.py	/^PROGRAM_RUN_ON_ROBOT=2      # Set the program to run on the robot$/;"	kind:variable	line:87
+PROGRAM_RUN_ON_SIMULATOR	../Fall Research 2017/python/Python/robolink.py	/^PROGRAM_RUN_ON_SIMULATOR=1  # Set the program to run on the simulator$/;"	kind:variable	line:86
+PROJECTION_ALONG_NORMAL	../Fall Research 2017/python/Python/robolink.py	/^PROJECTION_ALONG_NORMAL        = 2 # The projection will be done along the normal.$/;"	kind:variable	line:105
+PROJECTION_ALONG_NORMAL_RECALC	../Fall Research 2017/python/Python/robolink.py	/^PROJECTION_ALONG_NORMAL_RECALC = 3 # The projection will be done along the normal. Furthermore, the normal will be recalculated according to the surface normal.$/;"	kind:variable	line:106
+PROJECTION_CLOSEST	../Fall Research 2017/python/Python/robolink.py	/^PROJECTION_CLOSEST             = 1 # The projection will the closest point on the surface$/;"	kind:variable	line:104
+PROJECTION_NONE	../Fall Research 2017/python/Python/robolink.py	/^PROJECTION_NONE                = 0 # No curve projection$/;"	kind:variable	line:103
+Package	../Fall Research 2017/python/ur5.py	/^        class Package:$/;"	kind:class	line:41
+Packet	../Fall Research 2017/python/ur5.py	/^    class Packet:        $/;"	kind:class	line:37
+Parent	../Fall Research 2017/python/Python/robolink.py	/^    def Parent(self):$/;"	kind:member	line:1504
+Paste	../Fall Research 2017/python/Python/robolink.py	/^    def Paste(self):$/;"	kind:member	line:1405
+Paste	../Fall Research 2017/python/Python/robolink.py	/^    def Paste(self, toparent=0):$/;"	kind:member	line:684
+Pause	../Fall Research 2017/python/Python/robolink.py	/^    def Pause(self, time_ms = -1):$/;"	kind:member	line:2458
+Pos	../Fall Research 2017/python/Python/robodk.py	/^    def Pos(self):$/;"	kind:member	line:1125
+Pose	../Fall Research 2017/python/Python/robolink.py	/^    def Pose(self):$/;"	kind:member	line:1608
+Pose	../Fall Research 2017/python/ur5.py	/^    class Pose:$/;"	kind:class	line:10
+PoseAbs	../Fall Research 2017/python/Python/robolink.py	/^    def PoseAbs(self):$/;"	kind:member	line:1651
+PoseFrame	../Fall Research 2017/python/Python/robolink.py	/^    def PoseFrame(self):$/;"	kind:member	line:1965
+PoseTool	../Fall Research 2017/python/Python/robolink.py	/^    def PoseTool(self):$/;"	kind:member	line:1954
+Pose_2_ABB	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_ABB(H):$/;"	kind:function	line:596
+Pose_2_Adept	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Adept(H):$/;"	kind:function	line:507
+Pose_2_Comau	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Comau(H):$/;"	kind:function	line:539
+Pose_2_Fanuc	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Fanuc(H):$/;"	kind:function	line:445
+Pose_2_KUKA	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_KUKA(H):$/;"	kind:function	line:457
+Pose_2_Motoman	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Motoman(H):$/;"	kind:function	line:437
+Pose_2_Nachi	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Nachi(pose):$/;"	kind:function	line:546
+Pose_2_Staubli	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_Staubli(H):$/;"	kind:function	line:426
+Pose_2_TxyzRxyz	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_TxyzRxyz(H):$/;"	kind:function	line:392
+Pose_2_UR	../Fall Research 2017/python/Python/robodk.py	/^def Pose_2_UR(pose):$/;"	kind:function	line:612
+ProgramStart	../Fall Research 2017/python/Python/robolink.py	/^    def ProgramStart(self, programname, folder='', postprocessor=''):$/;"	kind:member	line:2341
+ProgramStart	../Fall Research 2017/python/Python/robolink.py	/^    def ProgramStart(self, programname, folder='', postprocessor='', robot=None):$/;"	kind:member	line:1224
+ProjectPoints	../Fall Research 2017/python/Python/robolink.py	/^    def ProjectPoints(self, points, object_project, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:776
+ProjectPoints	../Fall Research 2017/python/Python/robolink.py	/^    def ProjectPoints(self, points, projection_type=PROJECTION_ALONG_NORMAL_RECALC):$/;"	kind:member	line:1743
+RDK	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^RDK = Robolink()$/;"	kind:variable	line:111
+RDK	../Fall Research 2017/python/Python/robolink.py	/^    def RDK(self):$/;"	kind:member	line:1381
+RDK	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^RDK = Robolink()$/;"	kind:variable	line:111
+REFRESH_RATE	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^REFRESH_RATE = 0.1$/;"	kind:variable	line:22
+REFRESH_RATE	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^REFRESH_RATE = 0.1$/;"	kind:variable	line:22
+RETRIEVE_JOINTS_ONCE	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^RETRIEVE_JOINTS_ONCE = False  # If True, the current robot position will be retrieved once only$/;"	kind:variable	line:16
+RETRIEVE_JOINTS_ONCE	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^RETRIEVE_JOINTS_ONCE = False  # If True, the current robot position will be retrieved once only$/;"	kind:variable	line:16
+RL	../Fall Research 2017/python/Python/robolink.py	/^    def RL(self):$/;"	kind:member	line:1385
+ROBOTCOM_DISCONNECTED	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_DISCONNECTED   = -2$/;"	kind:variable	line:91
+ROBOTCOM_NOT_CONNECTED	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_NOT_CONNECTED  = -1$/;"	kind:variable	line:92
+ROBOTCOM_PROBLEMS	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_PROBLEMS       = -3$/;"	kind:variable	line:90
+ROBOTCOM_READY	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_READY          = 0$/;"	kind:variable	line:93
+ROBOTCOM_UNKNOWN	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_UNKNOWN        = -1000$/;"	kind:variable	line:96
+ROBOTCOM_WAITING	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_WAITING        = 2$/;"	kind:variable	line:95
+ROBOTCOM_WORKING	../Fall Research 2017/python/Python/robolink.py	/^ROBOTCOM_WORKING        = 1$/;"	kind:variable	line:94
+ROBOT_IP	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^    ROBOT_IP = ip$/;"	kind:variable	line:121
+ROBOT_IP	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^ROBOT_IP = "140.233.20.115"$/;"	kind:variable	line:107
+ROBOT_IP	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^    ROBOT_IP = ip$/;"	kind:variable	line:121
+ROBOT_IP	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^ROBOT_IP = "140.233.20.115"$/;"	kind:variable	line:107
+ROBOT_JOINTS	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^ROBOT_JOINTS = None$/;"	kind:variable	line:125
+ROBOT_JOINTS	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^ROBOT_JOINTS = None$/;"	kind:variable	line:125
+ROBOT_MODE_DATA	../Fall Research 2017/python/ur5.py	/^            ROBOT_MODE_DATA = 0$/;"	kind:variable	line:42
+ROBOT_PORT	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^ROBOT_PORT = 30003$/;"	kind:variable	line:108
+ROBOT_PORT	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^ROBOT_PORT = 30003$/;"	kind:variable	line:108
+RUNMODE_MAKE_ROBOTPROG	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_MAKE_ROBOTPROG=3                # makes the robot program$/;"	kind:variable	line:80
+RUNMODE_MAKE_ROBOTPROG_AND_START	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_MAKE_ROBOTPROG_AND_START=5      # makes the robot program and starts it on the robot (independently from the PC)$/;"	kind:variable	line:82
+RUNMODE_MAKE_ROBOTPROG_AND_UPLOAD	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_MAKE_ROBOTPROG_AND_UPLOAD=4     # makes the robot program and updates it to the robot$/;"	kind:variable	line:81
+RUNMODE_QUICKVALIDATE	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_QUICKVALIDATE=2                 # performs a quick check to validate the robot movements$/;"	kind:variable	line:79
+RUNMODE_RUN_ROBOT	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_RUN_ROBOT=6                     # moves the real robot from the PC (PC is the client, the robot behaves like a server)$/;"	kind:variable	line:83
+RUNMODE_SIMULATE	../Fall Research 2017/python/Python/robolink.py	/^RUNMODE_SIMULATE=1                      # performs the simulation moving the robot (default)$/;"	kind:variable	line:78
+Recolor	../Fall Research 2017/python/Python/robolink.py	/^    def Recolor(self, tocolor, fromcolor=None, tolerance=None):$/;"	kind:member	line:1662
+Recv	../Fall Research 2017/python/ur5.py	/^            def Recv(self, sock):$/;"	kind:member	line:57
+Recv	../Fall Research 2017/python/ur5.py	/^        def Recv(self, sock):$/;"	kind:member	line:63
+RelTool	../Fall Research 2017/python/Python/robodk.py	/^    def RelTool(self, x, y, z, rx=0,ry=0,rz=0):$/;"	kind:member	line:1102
+RelTool	../Fall Research 2017/python/Python/robodk.py	/^def RelTool(target_pose, x, y, z, rx=0,ry=0,rz=0):$/;"	kind:function	line:215
+RemoveDirFTP	../Fall Research 2017/python/Python/robodk.py	/^def RemoveDirFTP(ftp, path):$/;"	kind:function	line:1192
+RemoveFileFTP	../Fall Research 2017/python/Python/robodk.py	/^def RemoveFileFTP(ftp, filepath):$/;"	kind:function	line:1182
+Render	../Fall Research 2017/python/Python/robolink.py	/^    def Render(self, always_render=False):$/;"	kind:member	line:920
+RoboDK	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+RoboDK	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+Robolink	../Fall Research 2017/python/Python/robolink.py	/^class Robolink:$/;"	kind:class	line:144
+RobotCommands	../RobotControl.py	/^import RobotCommands$/;"	kind:namespace	line:3
+RobotCommands	../teach.py	/^import RobotCommands$/;"	kind:namespace	line:7
+RobotCommands.py	../RobotCommands.py	1;"	kind:file	line:1
+RobotControl.py	../RobotControl.py	1;"	kind:file	line:1
+Robot_Joints_Check	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def Robot_Joints_Check(jA,jB, tolerance_deg=1):$/;"	kind:function	line:29
+Robot_Joints_Check	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def Robot_Joints_Check(jA,jB, tolerance_deg=1):$/;"	kind:function	line:29
+RunCode	../Fall Research 2017/python/Python/robolink.py	/^    def RunCode(self, code, code_is_fcn_call=False):$/;"	kind:member	line:894
+RunCode	../Fall Research 2017/python/Python/robolink.py	/^    def RunCode(self, prog_parameters=None):$/;"	kind:member	line:2420
+RunCodeCustom	../Fall Research 2017/python/Python/robolink.py	/^    def RunCodeCustom(self, code, run_type=INSTRUCTION_CALL_PROGRAM):$/;"	kind:member	line:2443
+RunMessage	../Fall Research 2017/python/Python/robolink.py	/^    def RunMessage(self, message, message_is_comment=False):$/;"	kind:member	line:908
+RunMode	../Fall Research 2017/python/Python/robolink.py	/^    def RunMode(self):$/;"	kind:member	line:992
+RunProgram	../Fall Research 2017/python/Python/robolink.py	/^    def RunProgram(self, fcn_param, wait_for_finished = False):$/;"	kind:member	line:880
+RunProgram	../Fall Research 2017/python/Python/robolink.py	/^    def RunProgram(self, prog_parameters=None):$/;"	kind:member	line:2416
+SAFETY_DATA	../Fall Research 2017/python/ur5.py	/^            SAFETY_DATA = 10$/;"	kind:variable	line:52
+SAFE_MODE	../Fall Research 2017/python/Python/robolink.py	/^    SAFE_MODE = 1           # checks that provided items exist in memory$/;"	kind:variable	line:150
+SCENE	../SendFunc.py	/^SCENE = "def move():\\nmovej(p[0.16752,-0.362036,0.231711,0.0770738,0.317893,-1.84835], a = 0.3, v = 0.3)\\nend\\n"$/;"	kind:variable	line:32
+SPRAY_OFF	../Fall Research 2017/python/Python/robolink.py	/^SPRAY_OFF = 0$/;"	kind:variable	line:140
+SPRAY_ON	../Fall Research 2017/python/Python/robolink.py	/^SPRAY_ON = 1$/;"	kind:variable	line:141
+SQUARE	../MasterControl.py	/^SQUARE = 'def Pose():\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,0.0,0.4,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.3, v = 0.5)\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,0.4,0.0,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.3, v = 0.5)\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,0.0,-0.4,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.3, v = 0.5)\\nCurPos = get_actual_tcp_pose()\\nDisplacement = p[0.0,-0.4,0.0,0.0,0.0,0.0]\\nTarget = pose_trans(CurPos, Displacement)\\nmovel(Target, a = 0.3, v = 0.5)\\nend\\n'$/;"	kind:variable	line:325
+STAR	../MasterControl.py	/^STAR = "def Star():\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[-0.36,-0.12,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0.24,0.28,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0,-0.32,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[-0.24,0.28,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0.36,-0.12,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nend\\n"$/;"	kind:variable	line:327
+START	../MasterControl.py	/^START = "movej(p[0.122562,-0.163207,0.438395,-1.91079,-0.626631,-1.86714], a = 0.5, v = 0.5)\\n"$/;"	kind:variable	line:322
+Save	../Fall Research 2017/python/Python/robolink.py	/^    def Save(self, filename):$/;"	kind:member	line:1414
+Save	../Fall Research 2017/python/Python/robolink.py	/^    def Save(self, filename, itemsave=0):$/;"	kind:member	line:800
+SaveMat	../Fall Research 2017/python/Python/robodk.py	/^    def SaveMat(self, strfile):$/;"	kind:member	line:1168
+Scale	../Fall Research 2017/python/Python/robolink.py	/^    def Scale(self, scale):$/;"	kind:member	line:1706
+SelectedFeature	../Fall Research 2017/python/Python/robolink.py	/^    def SelectedFeature(self):$/;"	kind:member	line:1751
+SendFunc.py	../SendFunc.py	1;"	kind:file	line:1
+ShowInstructions	../Fall Research 2017/python/Python/robolink.py	/^    def ShowInstructions(self, show=True):$/;"	kind:member	line:2516
+ShowMessage	../Fall Research 2017/python/Python/robolink.py	/^    def ShowMessage(self, message, popup=True):$/;"	kind:member	line:650
+ShowRoboDK	../Fall Research 2017/python/Python/robolink.py	/^    def ShowRoboDK(self):$/;"	kind:member	line:621
+ShowSequence	../Fall Research 2017/python/Python/robolink.py	/^    def ShowSequence(self, matrix):$/;"	kind:member	line:1070
+ShowSequence	../Fall Research 2017/python/Python/robolink.py	/^    def ShowSequence(self, matrix):$/;"	kind:member	line:2292
+SimulationSpeed	../Fall Research 2017/python/Python/robolink.py	/^    def SimulationSpeed(self):$/;"	kind:member	line:967
+SolveFK	../Fall Research 2017/python/Python/robolink.py	/^    def SolveFK(self, joints):$/;"	kind:member	line:2016
+SolveIK	../Fall Research 2017/python/Python/robolink.py	/^    def SolveIK(self, pose, joints_approx = None):$/;"	kind:member	line:2042
+SolveIK_All	../Fall Research 2017/python/Python/robolink.py	/^    def SolveIK_All(self, pose):$/;"	kind:member	line:2065
+Spray_Add	../Fall Research 2017/python/Python/robolink.py	/^    def Spray_Add(self, item_tool=0, item_object=0, params="", points=None, geometry=None):$/;"	kind:member	line:1310
+Spray_Clear	../Fall Research 2017/python/Python/robolink.py	/^    def Spray_Clear(self, id_spray=-1):$/;"	kind:member	line:1348
+Spray_GetStats	../Fall Research 2017/python/Python/robolink.py	/^    def Spray_GetStats(self, id_spray=-1):$/;"	kind:member	line:1335
+Spray_SetState	../Fall Research 2017/python/Python/robolink.py	/^    def Spray_SetState(self, state=SPRAY_ON, id_spray=-1):$/;"	kind:member	line:1324
+StereoCamera_Measure	../Fall Research 2017/python/Python/robolink.py	/^    def StereoCamera_Measure(self):$/;"	kind:member	line:1090
+Stop	../Fall Research 2017/python/Python/robolink.py	/^    def Stop(self):$/;"	kind:member	line:2313
+TIMEOUT	../Fall Research 2017/python/Python/robolink.py	/^    TIMEOUT = 10             # timeout for communication, in seconds$/;"	kind:variable	line:152
+TOLERANCE_JOINTS_NEWTARGET	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^TOLERANCE_JOINTS_NEWTARGET = 10 # in degrees$/;"	kind:variable	line:20
+TOLERANCE_JOINTS_NEWTARGET	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^TOLERANCE_JOINTS_NEWTARGET = 10 # in degrees$/;"	kind:variable	line:20
+TOLERANCE_JOINTS_REFRESH	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^TOLERANCE_JOINTS_REFRESH   = 0.1$/;"	kind:variable	line:15
+TOLERANCE_JOINTS_REFRESH	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^TOLERANCE_JOINTS_REFRESH   = 0.1$/;"	kind:variable	line:15
+TOOL_DATA	../Fall Research 2017/python/ur5.py	/^            TOOL_DATA = 2$/;"	kind:variable	line:44
+TRAJ	../SendFunc.py	/^TRAJ = "def move():\\nmovej([1.939595, -1.137267, 1.892716, -2.222549, 1.498647, -1.725285],a = 0.3, v = 0.3)\\nmovej([1.577594, -1.263043, 2.055875, -2.265782, 1.508959, -1.089949],a = 0.3, v = 0.3)\\nmovej([1.290230, -1.159774, 1.847007, -2.187856, 1.527386, -0.360883],a = 0.3, v = 0.3)\\nmovej([1.654617, -1.261376, 1.980366, -2.266704, 1.524052, -1.157876],a = 0.3, v = 0.3)\\nmovej([2.184156, -0.566577, 0.793269, -1.649595, 1.426592, -2.923625],a = 0.3, v = 0.3)\\nmovej([1.992565, -1.134733, 1.814173, -2.124117, 1.450125, -2.081070],a = 0.3, v = 0.3)\\nmovej([1.844153, -1.216466, 2.041191, -2.291465, 1.409191, -1.695022],a = 0.3, v = 0.3)\\nend\\n"$/;"	kind:variable	line:24
+TxyzRxyz_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def TxyzRxyz_2_Pose(xyzrpw):$/;"	kind:function	line:379
+Type	../Fall Research 2017/python/Python/robolink.py	/^    def Type(self):$/;"	kind:member	line:1390
+UP	../MasterControl.py	/^UP = "def Move():\\nmovel(p[0.270365,-0.100752,0.789496,1.70422,1.01859,2.15213], a = 50, v = 25)\\nend\\n"$/;"	kind:variable	line:19
+UR5	../Fall Research 2017/python/ur5.py	/^class UR5:$/;"	kind:class	line:7
+UR5_HOST	../Fall Research 2017/python/ur5.py	/^UR5_HOST = "140.233.20.115"$/;"	kind:variable	line:4
+UR5_PORT	../Fall Research 2017/python/ur5.py	/^UR5_PORT = 30002$/;"	kind:variable	line:5
+UR_2_Pose	../Fall Research 2017/python/Python/robodk.py	/^def UR_2_Pose(xyzwpr):$/;"	kind:function	line:627
+UR_ActivateMonitoring.py	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	1;"	kind:file	line:1
+UR_ActivateMonitoring.py	../Fall Research 2017/python/UR_ActivateMonitoring.py	1;"	kind:file	line:1
+UR_GET_JOINT_CURRENTS	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_CURRENTS = 348$/;"	kind:variable	line:43
+UR_GET_JOINT_CURRENTS	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_CURRENTS = 348$/;"	kind:variable	line:43
+UR_GET_JOINT_POSITIONS	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_POSITIONS = 252$/;"	kind:variable	line:41
+UR_GET_JOINT_POSITIONS	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_POSITIONS = 252$/;"	kind:variable	line:41
+UR_GET_JOINT_SPEEDS	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_SPEEDS = 300$/;"	kind:variable	line:42
+UR_GET_JOINT_SPEEDS	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^UR_GET_JOINT_SPEEDS = 300$/;"	kind:variable	line:42
+UR_GET_TCP_FORCES	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^UR_GET_TCP_FORCES = 540$/;"	kind:variable	line:44
+UR_GET_TCP_FORCES	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^UR_GET_TCP_FORCES = 540$/;"	kind:variable	line:44
+UR_GET_TIME	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^UR_GET_TIME = 1$/;"	kind:variable	line:40
+UR_GET_TIME	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^UR_GET_TIME = 1$/;"	kind:variable	line:40
+UR_Monitor	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def UR_Monitor():$/;"	kind:function	line:82
+UR_Monitor	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def UR_Monitor():$/;"	kind:function	line:82
+Update	../Fall Research 2017/python/Python/robolink.py	/^    def Update(self):$/;"	kind:member	line:2556
+UploadDirFTP	../Fall Research 2017/python/Python/robodk.py	/^def UploadDirFTP(localpath, server_ip, remote_path, username, password):$/;"	kind:function	line:1219
+UploadFTP	../Fall Research 2017/python/Python/robodk.py	/^def UploadFTP(program, robot_ip, remote_path, ftp_user, ftp_pass):$/;"	kind:function	line:1324
+UploadFileFTP	../Fall Research 2017/python/Python/robodk.py	/^def UploadFileFTP(file_path_name, server_ip, remote_path, username, password):$/;"	kind:function	line:1278
+VX	../Fall Research 2017/python/Python/robodk.py	/^    def VX(self):$/;"	kind:member	line:1129
+VY	../Fall Research 2017/python/Python/robodk.py	/^    def VY(self):$/;"	kind:member	line:1133
+VZ	../Fall Research 2017/python/Python/robodk.py	/^    def VZ(self):$/;"	kind:member	line:1137
+Valid	../Fall Research 2017/python/Python/robolink.py	/^    def Valid(self):$/;"	kind:member	line:1446
+Visible	../Fall Research 2017/python/Python/robolink.py	/^    def Visible(self):$/;"	kind:member	line:1530
+WINDOWSTATE_CINEMA	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_CINEMA      = 5$/;"	kind:variable	line:124
+WINDOWSTATE_FULLSCREEN	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_FULLSCREEN  = 4$/;"	kind:variable	line:123
+WINDOWSTATE_FULLSCREEN_CINEMA	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_FULLSCREEN_CINEMA= 6$/;"	kind:variable	line:125
+WINDOWSTATE_HIDDEN	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_HIDDEN      = -1$/;"	kind:variable	line:118
+WINDOWSTATE_MAXIMIZED	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_MAXIMIZED   = 3$/;"	kind:variable	line:122
+WINDOWSTATE_MINIMIZED	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_MINIMIZED   = 1$/;"	kind:variable	line:120
+WINDOWSTATE_NORMAL	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_NORMAL      = 2$/;"	kind:variable	line:121
+WINDOWSTATE_SHOW	../Fall Research 2017/python/Python/robolink.py	/^WINDOWSTATE_SHOW        = 0$/;"	kind:variable	line:119
+WaitFinished	../Fall Research 2017/python/Python/robolink.py	/^    def WaitFinished(self):$/;"	kind:member	line:2336
+WaitMove	../Fall Research 2017/python/Python/robolink.py	/^    def WaitMove(self, timeout=300):$/;"	kind:member	line:2321
+__add__	../Fall Research 2017/python/Python/robodk.py	/^    def __add__(self, mat):$/;"	kind:member	line:993
+__cmp__	../Fall Research 2017/python/Python/robolink.py	/^    def __cmp__(self, item2):$/;"	kind:member	line:1375
+__eq__	../Fall Research 2017/python/Python/robodk.py	/^    def __eq__(self, mat):$/;"	kind:member	line:989
+__getitem__	../Fall Research 2017/python/Python/robodk.py	/^    def __getitem__(self, idx):$/;"	kind:member	line:853
+__init__	../Fall Research 2017/python/Python/robodk.py	/^    def __init__(self, msg, b1, b2, frame, t, entry):$/;"	kind:member	line:1389
+__init__	../Fall Research 2017/python/Python/robodk.py	/^    def __init__(self, rows=None, ncols=None):$/;"	kind:member	line:817
+__init__	../Fall Research 2017/python/Python/robolink.py	/^    def __init__(self, link, ptr_item=0, itemtype=-1):$/;"	kind:member	line:1364
+__init__	../Fall Research 2017/python/Python/robolink.py	/^    def __init__(self, robodk_ip='localhost', port=None, args=None, robodk_path=None):$/;"	kind:member	line:447
+__init__	../Fall Research 2017/python/ur5.py	/^        def __init__(self, x, y, z, ax, ay, az):$/;"	kind:member	line:15
+__init__	../RepeatabilityTest/flip.py	/^    def __init__(self, imn1, imn2):$/;"	kind:member	line:34
+__init__	../flip.py	/^    def __init__(self, imn1, imn2):$/;"	kind:member	line:34
+__mul__	../Fall Research 2017/python/Python/robodk.py	/^    def __mul__(self, mat):$/;"	kind:member	line:1037
+__repr__	../Fall Research 2017/python/Python/robodk.py	/^    def __repr__(self):$/;"	kind:member	line:939
+__repr__	../Fall Research 2017/python/Python/robolink.py	/^    def __repr__(self):$/;"	kind:member	line:1369
+__setitem__	../Fall Research 2017/python/Python/robodk.py	/^    def __setitem__(self, idx, item):$/;"	kind:member	line:887
+__str__	../Fall Research 2017/python/Python/robodk.py	/^    def __str__(self):$/;"	kind:member	line:934
+__sub__	../Fall Research 2017/python/Python/robodk.py	/^    def __sub__(self, mat):$/;"	kind:member	line:1015
+_check_color	../Fall Research 2017/python/Python/robolink.py	/^    def _check_color(self, color):$/;"	kind:member	line:206
+_check_connection	../Fall Research 2017/python/Python/robolink.py	/^    def _check_connection(self):$/;"	kind:member	line:174
+_check_status	../Fall Research 2017/python/Python/robolink.py	/^    def _check_status(self):$/;"	kind:member	line:180
+_is_connected	../Fall Research 2017/python/Python/robolink.py	/^    def _is_connected(self):$/;"	kind:member	line:161
+_moveX	../Fall Research 2017/python/Python/robolink.py	/^    def _moveX(self, target, itemrobot, movetype, blocking=True):$/;"	kind:member	line:377
+_rec_array	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_array(self):$/;"	kind:member	line:328
+_rec_int	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_int(self):$/;"	kind:member	line:310
+_rec_item	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_item(self):$/;"	kind:member	line:245
+_rec_line	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_line(self):$/;"	kind:member	line:223
+_rec_matrix	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_matrix(self):$/;"	kind:member	line:354
+_rec_pose	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_pose(self):$/;"	kind:member	line:274
+_rec_ptr	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_ptr(self):$/;"	kind:member	line:257
+_rec_xyz	../Fall Research 2017/python/Python/robolink.py	/^    def _rec_xyz(self):$/;"	kind:member	line:293
+_send_array	../Fall Research 2017/python/Python/robolink.py	/^    def _send_array(self, values):$/;"	kind:member	line:316
+_send_int	../Fall Research 2017/python/Python/robolink.py	/^    def _send_int(self, num):$/;"	kind:member	line:302
+_send_item	../Fall Research 2017/python/Python/robolink.py	/^    def _send_item(self, item):$/;"	kind:member	line:238
+_send_line	../Fall Research 2017/python/Python/robolink.py	/^    def _send_line(self, string=None):$/;"	kind:member	line:216
+_send_matrix	../Fall Research 2017/python/Python/robolink.py	/^    def _send_matrix(self, mat):$/;"	kind:member	line:339
+_send_pose	../Fall Research 2017/python/Python/robolink.py	/^    def _send_pose(self, pose):$/;"	kind:member	line:263
+_send_ptr	../Fall Research 2017/python/Python/robolink.py	/^    def _send_ptr(self, ptr_h):$/;"	kind:member	line:253
+_send_xyz	../Fall Research 2017/python/Python/robolink.py	/^    def _send_xyz(self, pos):$/;"	kind:member	line:286
+_set_connection_params	../Fall Research 2017/python/Python/robolink.py	/^    def _set_connection_params(self, safe_mode=1, auto_update=0, timeout=None):$/;"	kind:member	line:463
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:453
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:459
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:465
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:471
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:477
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:484
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:491
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:498
+a	../MasterControl.py	/^            a = float(y[0])$/;"	kind:variable	line:505
+acos	../Fall Research 2017/python/Python/robodk.py	/^def acos(value):$/;"	kind:function	line:120
+add3	../Fall Research 2017/python/Python/robodk.py	/^def add3(a,b):$/;"	kind:function	line:760
+addMoveJ	../Fall Research 2017/python/Python/robolink.py	/^    def addMoveJ(self, itemtarget):$/;"	kind:member	line:2494
+addMoveL	../Fall Research 2017/python/Python/robolink.py	/^    def addMoveL(self, itemtarget):$/;"	kind:member	line:2505
+angle3	../Fall Research 2017/python/Python/robodk.py	/^def angle3(a,b):$/;"	kind:function	line:735
+angles_2_joints	../Fall Research 2017/python/Python/robodk.py	/^def angles_2_joints(jin, type):$/;"	kind:function	line:697
+arc	../MasterControl.py	/^def arc():$/;"	kind:function	line:347
+arm	../MasterControl.py	/^def arm():$/;"	kind:function	line:401
+asin	../Fall Research 2017/python/Python/robodk.py	/^def asin(value):$/;"	kind:function	line:116
+atan2	../Fall Research 2017/python/Python/robodk.py	/^def atan2(y,x):$/;"	kind:function	line:100
+aux_fn_dict	../Fall Research 2017/urscriptor.py	/^aux_fn_dict = compile_regex(aux_fn_dict)$/;"	kind:variable	line:16
+aux_fn_dict	../Fall Research 2017/urscriptor.py	/^aux_fn_dict = {$/;"	kind:variable	line:9
+b1_action	../Fall Research 2017/python/Python/robodk.py	/^    def b1_action(self, event=None):$/;"	kind:member	line:1446
+b2_action	../Fall Research 2017/python/Python/robodk.py	/^    def b2_action(self, event=None):$/;"	kind:member	line:1456
+basic	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+basic	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+blinkoff	../RepeatabilityTest/flip.py	/^    def blinkoff(self):$/;"	kind:member	line:187
+blinkoff	../flip.py	/^    def blinkoff(self):$/;"	kind:member	line:187
+blinkon	../RepeatabilityTest/flip.py	/^    def blinkon(self):$/;"	kind:member	line:178
+blinkon	../flip.py	/^    def blinkon(self):$/;"	kind:member	line:178
+boundtuple	../RepeatabilityTest/flip.py	/^def boundtuple(a, lo, hi):$/;"	kind:function	line:302
+boundtuple	../flip.py	/^def boundtuple(a, lo, hi):$/;"	kind:function	line:302
+buttondown	../RepeatabilityTest/flip.py	/^    def buttondown(self, event):$/;"	kind:member	line:208
+buttondown	../flip.py	/^    def buttondown(self, event):$/;"	kind:member	line:208
+buttonmove	../RepeatabilityTest/flip.py	/^    def buttonmove(self, event):$/;"	kind:member	line:213
+buttonmove	../flip.py	/^    def buttonmove(self, event):$/;"	kind:member	line:213
+byte	../Fall Research 2017/urclienttest.py	/^byte = clientsocket.send(bytes(1))$/;"	kind:variable	line:18
+bytes	../Clutter/getpos.py	/^    bytes = client.recv(1024)$/;"	kind:variable	line:19
+bytes	../teach.py	/^        bytes = client.recv(1024)$/;"	kind:variable	line:28
+catH	../Fall Research 2017/python/Python/robodk.py	/^    def catH(self,mat2):$/;"	kind:member	line:977
+catH	../Fall Research 2017/python/Python/robodk.py	/^def catH(mat1, mat2):$/;"	kind:function	line:292
+catV	../Fall Research 2017/python/Python/robodk.py	/^    def catV(self,mat2):$/;"	kind:member	line:964
+catV	../Fall Research 2017/python/Python/robodk.py	/^def catV(mat1, mat2):$/;"	kind:function	line:288
+center	../RepeatabilityTest/flip.py	/^    def center(self):$/;"	kind:member	line:160
+center	../flip.py	/^    def center(self):$/;"	kind:member	line:160
+changecroppos	../RepeatabilityTest/flip.py	/^    def changecroppos(self, dpos):$/;"	kind:member	line:146
+changecroppos	../flip.py	/^    def changecroppos(self, dpos):$/;"	kind:member	line:146
+changecursor	../RepeatabilityTest/flip.py	/^    def changecursor(self, dc):$/;"	kind:member	line:149
+changecursor	../flip.py	/^    def changecursor(self, dc):$/;"	kind:member	line:149
+changeoffset	../RepeatabilityTest/flip.py	/^    def changeoffset(self, doffs):$/;"	kind:member	line:138
+changeoffset	../flip.py	/^    def changeoffset(self, doffs):$/;"	kind:member	line:138
+changezoom	../RepeatabilityTest/flip.py	/^    def changezoom(self, dz):$/;"	kind:member	line:166
+changezoom	../flip.py	/^    def changezoom(self, dz):$/;"	kind:member	line:166
+client	../Clutter/getpos.py	/^client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:13
+client	../Clutter/getpos.py	/^client = temp[0]$/;"	kind:variable	line:14
+client_addr	../Clutter/getpos.py	/^client_addr = temp[1]$/;"	kind:variable	line:15
+client_socket	../MasterControl.py	/^def client_socket():$/;"	kind:function	line:303
+close_mod	../Fall Research 2017/python/Python/robodk.py	/^    def close_mod(self):$/;"	kind:member	line:1462
+closed	../Clutter/getpos.py	/^    closed = (len(bytes) == 0)$/;"	kind:variable	line:20
+closed	../Clutter/getpos.py	/^closed = False$/;"	kind:variable	line:17
+cmd	../opencv3-paths-fix.py	/^cmd =  []$/;"	kind:variable	line:18
+codecs	../Fall Research 2017/python/Python/robodk.py	/^    import codecs$/;"	kind:namespace	line:321
+communicate	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+communicate	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+compile_regex	../Fall Research 2017/urscriptor.py	/^def compile_regex(regex2fmt):$/;"	kind:function	line:13
+connect	../RobotCommands.py	/^def connect():$/;"	kind:function	line:20
+copy	../Fall Research 2017/python/Python/robodk.py	/^    def copy(self):$/;"	kind:member	line:845
+cos	../Fall Research 2017/python/Python/robodk.py	/^def cos(value):$/;"	kind:function	line:112
+counter	../MasterControl.py	/^            counter = counter + 1$/;"	kind:variable	line:443
+counter	../MasterControl.py	/^            counter = counter + 1$/;"	kind:variable	line:446
+counter	../MasterControl.py	/^            counter = counter + 1$/;"	kind:variable	line:449
+counter	../MasterControl.py	/^    counter = 0$/;"	kind:variable	line:413
+cross	../Fall Research 2017/python/Python/robodk.py	/^def cross(a, b):$/;"	kind:function	line:724
+csv	../Fall Research 2017/python/Python/robodk.py	/^    import csv$/;"	kind:namespace	line:320
+ctypes	../Fall Research 2017/python/ur5.py	/^import ctypes$/;"	kind:namespace	line:2
+curve	../MasterControl.py	/^def curve():$/;"	kind:function	line:390
+data	../opencv3-paths-fix.py	/^  data = datastr.split('\\n') $/;"	kind:variable	line:24
+datastr	../opencv3-paths-fix.py	/^  datastr = subprocess.check_output(['otool','-l','-v', lib])$/;"	kind:variable	line:23
+deg_to_rad_list	../AngleConversion.py	/^def deg_to_rad_list(degs):$/;"	kind:function	line:11
+deg_to_rad_list	../MasterControl.py	/^def deg_to_rad_list(deg):$/;"	kind:function	line:83
+detect	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+dh	../Fall Research 2017/python/Python/robodk.py	/^def dh(rz,tx=None,tz=None,rx=None):$/;"	kind:function	line:648
+dhm	../Fall Research 2017/python/Python/robodk.py	/^def dhm(rx, tx=None, tz=None, rz=None):$/;"	kind:function	line:664
+diffoff	../RepeatabilityTest/flip.py	/^    def diffoff(self):$/;"	kind:member	line:202
+diffoff	../flip.py	/^    def diffoff(self):$/;"	kind:member	line:202
+diffon	../RepeatabilityTest/flip.py	/^    def diffon(self):$/;"	kind:member	line:196
+diffon	../flip.py	/^    def diffon(self):$/;"	kind:member	line:196
+distance	../Fall Research 2017/python/Python/robodk.py	/^def distance(a,b):$/;"	kind:function	line:764
+dot	../Fall Research 2017/python/Python/robodk.py	/^def dot(a,b):$/;"	kind:function	line:731
+down	../MasterControl.py	/^def down(a, v):$/;"	kind:function	line:135
+duplicate.py	../Fall Research 2017/duplicate.py	1;"	kind:file	line:1
+ehandle	../opencv3-paths-fix.py	/^  ehandle = open("rpathChangeErr.txt", 'w')$/;"	kind:variable	line:41
+end_freedrive	../MasterControl.py	/^def end_freedrive():$/;"	kind:function	line:51
+end_freedrive	../RobotCommands.py	/^def end_freedrive():$/;"	kind:function	line:58
+equals	../Fall Research 2017/python/Python/robolink.py	/^    def equals(self, item2):$/;"	kind:member	line:1378
+err	../opencv3-paths-fix.py	/^err = []$/;"	kind:variable	line:19
+eye	../Fall Research 2017/python/Python/robodk.py	/^    def eye(self, m=4):$/;"	kind:member	line:1073
+eye	../Fall Research 2017/python/Python/robodk.py	/^def eye(size=4):$/;"	kind:function	line:248
+filedialog	../Fall Research 2017/python/Python/robodk.py	/^    from tkinter import filedialog$/;"	kind:namespace	line:1359
+filedialog	../Fall Research 2017/python/Python/robodk.py	/^    import tkFileDialog as filedialog$/;"	kind:namespace	line:1355
+fitPlane	../Fall Research 2017/python/Python/robodk.py	/^def fitPlane(points):$/;"	kind:function	line:786
+flip.py	../RepeatabilityTest/flip.py	1;"	kind:file	line:1
+flip.py	../flip.py	1;"	kind:file	line:1
+flipper	../RepeatabilityTest/flip.py	/^class flipper:$/;"	kind:class	line:32
+flipper	../flip.py	/^class flipper:$/;"	kind:class	line:32
+freedrive	../MasterControl.py	/^def freedrive():$/;"	kind:function	line:46
+freedrive	../RobotCommands.py	/^def freedrive():$/;"	kind:function	line:52
+ftplib	../Fall Research 2017/python/Python/robodk.py	/^    import ftplib    $/;"	kind:namespace	line:1184
+ftplib	../Fall Research 2017/python/Python/robodk.py	/^    import ftplib    $/;"	kind:namespace	line:1194
+ftplib	../Fall Research 2017/python/Python/robodk.py	/^    import ftplib$/;"	kind:namespace	line:1221
+ftplib	../Fall Research 2017/python/Python/robodk.py	/^    import ftplib$/;"	kind:namespace	line:1282
+func1	../SendFunc.py	/^func1 = "def Move():\\nset_digital_out(1,True)\\nmovej([-1.353230615918169, -0.9105038005127148, -2.363083898161912, 0.195608666035183, 0.6008930202640654, 0.708749062236389], a=1, v=1)\\nset_digital_out(1,False)\\nend\\n"$/;"	kind:variable	line:9
+getBaseName	../Fall Research 2017/python/Python/robodk.py	/^def getBaseName(filepath):$/;"	kind:function	line:56
+getFileDir	../Fall Research 2017/python/Python/robodk.py	/^def getFileDir(filepath):$/;"	kind:function	line:52
+getFileName	../Fall Research 2017/python/Python/robodk.py	/^def getFileName(filepath):$/;"	kind:function	line:60
+getOpenFile	../Fall Research 2017/python/Python/robodk.py	/^def getOpenFile(path_preference="C:\/RoboDK\/Library\/"):$/;"	kind:function	line:1364
+getParam	../Fall Research 2017/python/Python/robolink.py	/^    def getParam(self, param='PATH_OPENSTATION'):$/;"	kind:member	line:1030
+getParams	../Fall Research 2017/python/Python/robolink.py	/^    def getParams(self):$/;"	kind:member	line:1009
+getSaveFile	../Fall Research 2017/python/Python/robodk.py	/^def getSaveFile(path_preference="C:\/RoboDK\/Library\/", strfile = 'file.txt', strtitle='Save file as ...'):$/;"	kind:function	line:1372
+getpixel	../RepeatabilityTest/flip.py	/^def getpixel(im, xy):$/;"	kind:function	line:309
+getpixel	../flip.py	/^def getpixel(im, xy):$/;"	kind:function	line:309
+getpos.py	../Clutter/getpos.py	1;"	kind:file	line:1
+glob	../Fall Research 2017/python/Python/robodk.py	/^    import glob$/;"	kind:namespace	line:45
+glob	../RepeatabilityTest/flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+glob	../flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+glob	../opencv3-paths-fix.py	/^import glob$/;"	kind:namespace	line:1
+high	../MasterControl.py	/^def high(a, v):$/;"	kind:function	line:163
+host	../Fall Research 2017/urscriptor.py	/^host = "140.233.20.115"$/;"	kind:variable	line:6
+intersect_line_2_plane	../Fall Research 2017/python/Python/robodk.py	/^def intersect_line_2_plane(pline,vline,pplane,vplane):$/;"	kind:function	line:769
+invH	../Fall Research 2017/python/Python/robodk.py	/^    def invH(self):$/;"	kind:member	line:1112
+invH	../Fall Research 2017/python/Python/robodk.py	/^def invH(matrix):$/;"	kind:function	line:281
+isHomogeneous	../Fall Research 2017/python/Python/robodk.py	/^    def isHomogeneous(self):$/;"	kind:member	line:1082
+joints	../AngleConversion.py	/^    joints = x.split(", ")$/;"	kind:variable	line:21
+joints_2_angles	../Fall Research 2017/python/Python/robodk.py	/^def joints_2_angles(jin, type):$/;"	kind:function	line:680
+l	../Fall Research 2017/urscriptor.py	/^l = status_channel.recv(1)$/;"	kind:variable	line:45
+last_joints_refresh	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^        last_joints_refresh = ROBOT_JOINTS    $/;"	kind:variable	line:145
+last_joints_refresh	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^last_joints_refresh = None$/;"	kind:variable	line:127
+last_joints_refresh	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^        last_joints_refresh = ROBOT_JOINTS    $/;"	kind:variable	line:145
+last_joints_refresh	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^last_joints_refresh = None$/;"	kind:variable	line:127
+last_joints_target	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^        last_joints_target = ROBOT_JOINTS$/;"	kind:variable	line:154
+last_joints_target	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^last_joints_target = None$/;"	kind:variable	line:126
+last_joints_target	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^        last_joints_target = ROBOT_JOINTS$/;"	kind:variable	line:154
+last_joints_target	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^last_joints_target = None$/;"	kind:variable	line:126
+libname	../opencv3-paths-fix.py	/^      libname = ll[1].split('\/')[-1]$/;"	kind:variable	line:29
+libs	../opencv3-paths-fix.py	/^libs = []$/;"	kind:variable	line:14
+linearX	../MasterControl.py	/^def linearX(d, a, v):$/;"	kind:function	line:279
+linearY	../MasterControl.py	/^def linearY(d, a, v):$/;"	kind:function	line:266
+linearZ	../MasterControl.py	/^def linearZ(d, a, v):$/;"	kind:function	line:252
+ll	../opencv3-paths-fix.py	/^    ll = line.split()$/;"	kind:variable	line:26
+low	../MasterControl.py	/^def low(a, v):$/;"	kind:function	line:149
+math	../AngleConversion.py	/^import math$/;"	kind:namespace	line:1
+math	../Fall Research 2017/python/Python/robodk.py	/^import math$/;"	kind:namespace	line:31
+math	../MasterControl.py	/^import math$/;"	kind:namespace	line:3
+matrix	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+matrix	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+mbox	../Fall Research 2017/python/Python/robodk.py	/^def mbox(msg, b1='OK', b2='Cancel', frame=True, t=False, entry=None):$/;"	kind:function	line:1476
+message_type	../Fall Research 2017/python/ur5.py	/^        message_type = ctypes.c_uint8()$/;"	kind:variable	line:39
+motion	../SendFunc.py	/^motion = "movej(p[-0.21213,-0.40218,0.28873,3.04,-1.4736,2.6895], a = 0.1, v = 0.1, r = 0.01)\\n"$/;"	kind:variable	line:20
+mousewheel	../RepeatabilityTest/flip.py	/^    def mousewheel(self, event):$/;"	kind:member	line:175
+mousewheel	../flip.py	/^    def mousewheel(self, event):$/;"	kind:member	line:175
+move	../MasterControl.py	/^def move(positions):$/;"	kind:function	line:27
+move	../RobotCommands.py	/^def move(positions):$/;"	kind:function	line:33
+move_joints	../MasterControl.py	/^def move_joints(joints, a, v):$/;"	kind:function	line:192
+move_pose	../MasterControl.py	/^def move_pose(pose, a, v):$/;"	kind:function	line:177
+mult3	../Fall Research 2017/python/Python/robodk.py	/^def mult3(v,d):$/;"	kind:function	line:752
+name_2_id	../Fall Research 2017/python/Python/robodk.py	/^def name_2_id(str_name_id):$/;"	kind:function	line:124
+newtarget	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^        newtarget = RDK.AddTarget('T %i' % target_count, 0, robot)$/;"	kind:variable	line:156
+newtarget	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^        newtarget = RDK.AddTarget('T %i' % target_count, 0, robot)$/;"	kind:variable	line:156
+next_position	../MasterControl.py	/^def next_position():$/;"	kind:function	line:116
+norm	../Fall Research 2017/python/Python/robodk.py	/^def norm(p):$/;"	kind:function	line:715
+normalize3	../Fall Research 2017/python/Python/robodk.py	/^def normalize3(a):$/;"	kind:function	line:719
+np	../Fall Research 2017/python/Python/robodk.py	/^    import numpy as np$/;"	kind:namespace	line:788
+ohandle	../opencv3-paths-fix.py	/^ohandle = open("rpathChangeCmd.txt", 'w')$/;"	kind:variable	line:35
+on_packet	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def on_packet(packet):$/;"	kind:function	line:72
+on_packet	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def on_packet(packet):$/;"	kind:function	line:72
+opencv3-paths-fix.py	../opencv3-paths-fix.py	1;"	kind:file	line:1
+opencvtest.py	../opencvtest.py	1;"	kind:file	line:1
+operations	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+operations	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robodk import *      # basic matrix operations$/;"	kind:namespace	line:7
+operator	../Fall Research 2017/python/Python/robodk.py	/^import operator$/;"	kind:namespace	line:32
+orientation	../Fall Research 2017/python/ur5.py	/^        orientation = (0, 0, 0, 0, 0, 0)$/;"	kind:variable	line:13
+os	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^import os$/;"	kind:namespace	line:11
+os	../Fall Research 2017/python/Python/robodk.py	/^    import os$/;"	kind:namespace	line:1222
+os	../Fall Research 2017/python/Python/robodk.py	/^    import os$/;"	kind:namespace	line:1283
+os	../Fall Research 2017/python/Python/robodk.py	/^    import os$/;"	kind:namespace	line:1336
+os	../Fall Research 2017/python/Python/robodk.py	/^import os.path$/;"	kind:namespace	line:40
+os	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^import os$/;"	kind:namespace	line:11
+os	../RepeatabilityTest/flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+os	../flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+os	../opencv3-paths-fix.py	/^import os.path$/;"	kind:namespace	line:3
+package_length	../Fall Research 2017/python/ur5.py	/^            package_length = ctypes.c_uint()$/;"	kind:variable	line:54
+package_type	../Fall Research 2017/python/ur5.py	/^            package_type = ctypes.c_uint8()$/;"	kind:variable	line:55
+packet_check	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def packet_check(buf):$/;"	kind:function	line:53
+packet_check	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def packet_check(buf):$/;"	kind:function	line:53
+packet_length	../Fall Research 2017/python/ur5.py	/^        packet_length = ctypes.c_int()$/;"	kind:variable	line:38
+packet_size	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def packet_size(buf):$/;"	kind:function	line:47
+packet_size	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def packet_size(buf):$/;"	kind:function	line:47
+packet_value	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^def packet_value(buf, offset, nval=6):$/;"	kind:function	line:62
+packet_value	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^def packet_value(buf, offset, nval=6):$/;"	kind:function	line:62
+path	../Fall Research 2017/python/Python/robodk.py	/^import os.path$/;"	kind:namespace	line:40
+path	../opencv3-paths-fix.py	/^import os.path$/;"	kind:namespace	line:3
+pause	../Fall Research 2017/python/Python/robodk.py	/^def pause(seconds):$/;"	kind:function	line:93
+pi	../Fall Research 2017/python/Python/robodk.py	/^pi = math.pi$/;"	kind:variable	line:91
+point_Zaxis_2_pose	../Fall Research 2017/python/Python/robodk.py	/^def point_Zaxis_2_pose(point, zaxis, yaxis_hint1=[0,0,1], yaxis_hint2=[0,1,1]):$/;"	kind:function	line:234
+port	../Fall Research 2017/urscriptor.py	/^port = 30002$/;"	kind:variable	line:7
+pose_2_quaternion	../Fall Research 2017/python/Python/robodk.py	/^def pose_2_quaternion(Ti):$/;"	kind:function	line:558
+pose_2_xyzrpw	../Fall Research 2017/python/Python/robodk.py	/^def pose_2_xyzrpw(H):$/;"	kind:function	line:338
+pose_angle	../Fall Research 2017/python/Python/robodk.py	/^def pose_angle(pose):$/;"	kind:function	line:739
+pose_angle_between	../Fall Research 2017/python/Python/robodk.py	/^def pose_angle_between(pose1, pose2):$/;"	kind:function	line:748
+positions	../teach.py	/^positions = []$/;"	kind:variable	line:18
+powerdown	../MasterControl.py	/^def powerdown():$/;"	kind:function	line:207
+print_pose_ABB	../Fall Research 2017/python/Python/robodk.py	/^def print_pose_ABB(pose):$/;"	kind:function	line:604
+proj_pt_2_line	../Fall Research 2017/python/Python/robodk.py	/^def proj_pt_2_line(point, paxe, vaxe):$/;"	kind:function	line:780
+proj_pt_2_plane	../Fall Research 2017/python/Python/robodk.py	/^def proj_pt_2_plane(point,planepoint,planeABC):$/;"	kind:function	line:776
+python	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+quaternion_2_pose	../Fall Research 2017/python/Python/robodk.py	/^def quaternion_2_pose(qin):$/;"	kind:function	line:581
+quit	../RepeatabilityTest/flip.py	/^    def quit(self):$/;"	kind:member	line:119
+quit	../flip.py	/^    def quit(self):$/;"	kind:member	line:119
+rad_to_deg_list	../AngleConversion.py	/^def rad_to_deg_list(rads):$/;"	kind:function	line:3
+rad_to_deg_list	../MasterControl.py	/^def rad_to_deg_list(rad):$/;"	kind:function	line:74
+re	../Fall Research 2017/urscriptor.py	/^import re$/;"	kind:namespace	line:3
+restore_position	../MasterControl.py	/^def restore_position():$/;"	kind:function	line:111
+return_joint_positions	../MasterControl.py	/^def return_joint_positions():$/;"	kind:function	line:64
+return_joint_positions	../RobotCommands.py	/^def return_joint_positions():$/;"	kind:function	line:69
+return_pose	../MasterControl.py	/^def return_pose():$/;"	kind:function	line:56
+return_pose	../RobotCommands.py	/^def return_pose():$/;"	kind:function	line:62
+robodk.py	../Fall Research 2017/python/Python/robodk.py	1;"	kind:file	line:1
+robolink.py	../Fall Research 2017/python/Python/robolink.py	1;"	kind:file	line:1
+robot	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^robot = RDK.ItemUserPick('Select a UR robot to retrieve current position', ITEM_TYPE_ROBOT)$/;"	kind:variable	line:114
+robot	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^robot = RDK.ItemUserPick('Select a UR robot to retrieve current position', ITEM_TYPE_ROBOT)$/;"	kind:variable	line:114
+rotx	../Fall Research 2017/python/Python/robodk.py	/^def rotx(rx):$/;"	kind:function	line:136
+roty	../Fall Research 2017/python/Python/robodk.py	/^def roty(ry):$/;"	kind:function	line:153
+rotz	../Fall Research 2017/python/Python/robodk.py	/^def rotz(rz):$/;"	kind:function	line:170
+s	../Clutter/getpos.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:7
+s	../Fall Research 2017/duplicate.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:8
+s	../Fall Research 2017/urclienttest.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:8
+s	../Fall Research 2017/urscriptor.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:18
+s	../MasterControl.py	/^        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:415
+s	../SendFunc.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:6
+s	../teach.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:12
+saturate_1	../Fall Research 2017/python/Python/robodk.py	/^    def saturate_1(value):$/;"	kind:function	line:614
+scriptp	../Fall Research 2017/urscriptor.py	/^scriptp = '.\/test.urscript'$/;"	kind:variable	line:5
+searchfiles	../Fall Research 2017/python/Python/robodk.py	/^def searchfiles(pattern='C:\\\\RoboDK\\\\Library\\\\*.rdk'):$/;"	kind:function	line:43
+server	../MasterControl.py	/^def server():$/;"	kind:function	line:309
+setAcceleration	../Fall Research 2017/python/Python/robolink.py	/^    def setAcceleration(self, accel_linear):$/;"	kind:member	line:2267
+setAccelerationJoints	../Fall Research 2017/python/Python/robolink.py	/^    def setAccelerationJoints(self, accel_joints):$/;"	kind:member	line:2277
+setAccuracyActive	../Fall Research 2017/python/Python/robolink.py	/^    def setAccuracyActive(self, accurate = 1):$/;"	kind:member	line:2354
+setAsCartesianTarget	../Fall Research 2017/python/Python/robolink.py	/^    def setAsCartesianTarget(self):$/;"	kind:member	line:1803
+setAsJointTarget	../Fall Research 2017/python/Python/robolink.py	/^    def setAsJointTarget(self):$/;"	kind:member	line:1811
+setColor	../Fall Research 2017/python/Python/robolink.py	/^    def setColor(self, tocolor):$/;"	kind:member	line:1685
+setConnectionParams	../Fall Research 2017/python/Python/robolink.py	/^    def setConnectionParams(self, robot_ip, port, remote_path, ftp_user, ftp_pass):$/;"	kind:member	line:2159
+setDO	../Fall Research 2017/python/Python/robolink.py	/^    def setDO(self, io_var, io_value):$/;"	kind:member	line:2468
+setFrame	../Fall Research 2017/python/Python/robolink.py	/^    def setFrame(self, frame):$/;"	kind:member	line:1914
+setGeometryPose	../Fall Research 2017/python/Python/robolink.py	/^    def setGeometryPose(self, pose):$/;"	kind:member	line:1620
+setHtool	../Fall Research 2017/python/Python/robolink.py	/^    def setHtool(self, pose):$/;"	kind:member	line:1977
+setInstruction	../Fall Research 2017/python/Python/robolink.py	/^    def setInstruction(self, ins_id, name, instype, movetype, isjointtarget, target, joints):$/;"	kind:member	line:2574
+setJoints	../Fall Research 2017/python/Python/robolink.py	/^    def setJoints(self, joints):$/;"	kind:member	line:1879
+setJoints	../Fall Research 2017/python/Python/robolink.py	/^    def setJoints(self, robot_item_list, joints_list):$/;"	kind:member	line:1184
+setMillingParameters	../Fall Research 2017/python/Python/robolink.py	/^    def setMillingParameters(self, ncfile='', part=0, params=''):$/;"	kind:member	line:1783
+setName	../Fall Research 2017/python/Python/robolink.py	/^    def setName(self, name):$/;"	kind:member	line:1565
+setParam	../Fall Research 2017/python/Python/robolink.py	/^    def setParam(self, param, value):$/;"	kind:member	line:1053
+setParent	../Fall Research 2017/python/Python/robolink.py	/^    def setParent(self, parent):$/;"	kind:member	line:1451
+setParentStatic	../Fall Research 2017/python/Python/robolink.py	/^    def setParentStatic(self, parent):$/;"	kind:member	line:1461
+setPos	../Fall Research 2017/python/Python/robodk.py	/^    def setPos(self, newpos):$/;"	kind:member	line:1141
+setPose	../Fall Research 2017/python/Python/robolink.py	/^    def setPose(self, pose):$/;"	kind:member	line:1597
+setPoseAbs	../Fall Research 2017/python/Python/robolink.py	/^    def setPoseAbs(self, pose):$/;"	kind:member	line:1641
+setPoseFrame	../Fall Research 2017/python/Python/robolink.py	/^    def setPoseFrame(self, frame):$/;"	kind:member	line:1922
+setPoseTool	../Fall Research 2017/python/Python/robolink.py	/^    def setPoseTool(self, tool):$/;"	kind:member	line:1938
+setPoses	../Fall Research 2017/python/Python/robolink.py	/^    def setPoses(self, items, poses):$/;"	kind:member	line:1125
+setPosesAbs	../Fall Research 2017/python/Python/robolink.py	/^    def setPosesAbs(self, items, poses):$/;"	kind:member	line:1146
+setRobot	../Fall Research 2017/python/Python/robolink.py	/^    def setRobot(self, robot=None):$/;"	kind:member	line:1901
+setRunMode	../Fall Research 2017/python/Python/robolink.py	/^    def setRunMode(self, run_mode=1):$/;"	kind:member	line:976
+setRunType	../Fall Research 2017/python/Python/robolink.py	/^    def setRunType(self, program_run_type):$/;"	kind:member	line:2406
+setSimulationSpeed	../Fall Research 2017/python/Python/robolink.py	/^    def setSimulationSpeed(self, speed):$/;"	kind:member	line:959
+setSpeed	../Fall Research 2017/python/Python/robolink.py	/^    def setSpeed(self, speed_linear, speed_joints=-1, accel_linear=-1, accel_joints=-1):$/;"	kind:member	line:2254
+setSpeedJoints	../Fall Research 2017/python/Python/robolink.py	/^    def setSpeedJoints(self, speed_joints):$/;"	kind:member	line:2272
+setTool	../Fall Research 2017/python/Python/robolink.py	/^    def setTool(self, tool):$/;"	kind:member	line:1918
+setVX	../Fall Research 2017/python/Python/robodk.py	/^    def setVX(self, v_xyz):$/;"	kind:member	line:1147
+setVY	../Fall Research 2017/python/Python/robodk.py	/^    def setVY(self, v_xyz):$/;"	kind:member	line:1154
+setVZ	../Fall Research 2017/python/Python/robodk.py	/^    def setVZ(self, v_xyz):$/;"	kind:member	line:1161
+setValue	../Fall Research 2017/python/Python/robolink.py	/^    def setValue(self, varname, value):$/;"	kind:member	line:1575
+setVisible	../Fall Research 2017/python/Python/robolink.py	/^    def setVisible(self, visible, visible_frame=None):$/;"	kind:member	line:1541
+setWindowState	../Fall Research 2017/python/Python/robolink.py	/^    def setWindowState(self, windowstate=WINDOWSTATE_NORMAL):$/;"	kind:member	line:642
+setZoneData	../Fall Research 2017/python/Python/robolink.py	/^    def setZoneData(self, zonedata):$/;"	kind:member	line:2282
+setcroppos	../RepeatabilityTest/flip.py	/^    def setcroppos(self, cpos):$/;"	kind:member	line:153
+setcroppos	../flip.py	/^    def setcroppos(self, cpos):$/;"	kind:member	line:153
+setcropsize	../RepeatabilityTest/flip.py	/^    def setcropsize(self):$/;"	kind:member	line:132
+setcropsize	../flip.py	/^    def setcropsize(self):$/;"	kind:member	line:132
+showpos	../RepeatabilityTest/flip.py	/^    def showpos(self):$/;"	kind:member	line:225
+showpos	../flip.py	/^    def showpos(self):$/;"	kind:member	line:225
+sin	../Fall Research 2017/python/Python/robodk.py	/^def sin(value):$/;"	kind:function	line:108
+size	../Fall Research 2017/python/Python/robodk.py	/^    def size(self,dim=None):$/;"	kind:member	line:950
+size	../Fall Research 2017/python/Python/robodk.py	/^def size(matrix,dim=None):$/;"	kind:function	line:263
+sleep	../Clutter/getpos.py	/^from time import sleep$/;"	kind:namespace	line:2
+sleep	../teach.py	/^from time import sleep$/;"	kind:namespace	line:6
+sock	../Fall Research 2017/python/ur5.py	/^    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:8
+socket	../Clutter/getpos.py	/^import socket$/;"	kind:namespace	line:1
+socket	../Fall Research 2017/duplicate.py	/^import socket$/;"	kind:namespace	line:1
+socket	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^import socket$/;"	kind:namespace	line:9
+socket	../Fall Research 2017/python/Python/robolink.py	/^        import socket$/;"	kind:namespace	line:500
+socket	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^import socket$/;"	kind:namespace	line:9
+socket	../Fall Research 2017/python/ur5.py	/^import socket$/;"	kind:namespace	line:1
+socket	../Fall Research 2017/urclienttest.py	/^import socket$/;"	kind:namespace	line:1
+socket	../Fall Research 2017/urscriptor.py	/^import socket$/;"	kind:namespace	line:1
+socket	../MasterControl.py	/^import socket$/;"	kind:namespace	line:4
+socket	../RobotCommands.py	/^import socket$/;"	kind:namespace	line:3
+socket	../RobotControl.py	/^import socket$/;"	kind:namespace	line:4
+socket	../SendFunc.py	/^import socket$/;"	kind:namespace	line:1
+socket	../teach.py	/^import socket$/;"	kind:namespace	line:5
+sqrt	../Fall Research 2017/python/Python/robodk.py	/^def sqrt(value):$/;"	kind:function	line:104
+square	../MasterControl.py	/^def square():$/;"	kind:function	line:337
+square1	../MasterControl.py	/^def square1(back):$/;"	kind:function	line:352
+square2	../MasterControl.py	/^def square2(back):$/;"	kind:function	line:362
+square3	../MasterControl.py	/^def square3(back):$/;"	kind:function	line:372
+square4	../MasterControl.py	/^def square4(back):$/;"	kind:function	line:381
+star	../MasterControl.py	/^def star():$/;"	kind:function	line:342
+star	../SendFunc.py	/^star = "def Star():\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[-0.36,-0.12,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0.24,0.28,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0,-0.32,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[-0.24,0.28,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nCurPos = get_forward_kin()\\nTarget = pose_trans(CurPos, p[0.36,-0.12,0,0,0,0])\\nmovel(Target, a = 0.3, v = 1)\\nend\\n"$/;"	kind:variable	line:17
+start	../MasterControl.py	/^def start():$/;"	kind:function	line:332
+status_channel	../Fall Research 2017/urscriptor.py	/^status_channel = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	kind:variable	line:21
+str	../Clutter/getpos.py	/^    str = bytes.decode("utf-8")$/;"	kind:variable	line:21
+str	../teach.py	/^        str = bytes.decode("utf-8")$/;"	kind:variable	line:29
+struct	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^import struct$/;"	kind:namespace	line:10
+struct	../Fall Research 2017/python/Python/robolink.py	/^import struct$/;"	kind:namespace	line:33
+struct	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^import struct$/;"	kind:namespace	line:10
+subprocess	../Fall Research 2017/python/Python/robolink.py	/^                    import subprocess$/;"	kind:namespace	line:526
+subprocess	../opencv3-paths-fix.py	/^import subprocess$/;"	kind:namespace	line:2
+subs3	../Fall Research 2017/python/Python/robodk.py	/^def subs3(a,b):$/;"	kind:function	line:756
+sys	../Fall Research 2017/python/Python/robodk.py	/^        import sys$/;"	kind:namespace	line:1188
+sys	../Fall Research 2017/python/Python/robodk.py	/^    import sys$/;"	kind:namespace	line:1223
+sys	../Fall Research 2017/python/Python/robodk.py	/^    import sys$/;"	kind:namespace	line:1284
+sys	../Fall Research 2017/python/Python/robodk.py	/^import sys$/;"	kind:namespace	line:33
+sys	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+sys	../MasterControl.py	/^import sys$/;"	kind:namespace	line:6
+sys	../RepeatabilityTest/flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+sys	../flip.py	/^import os, sys, glob$/;"	kind:namespace	line:19
+t	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^t = threading.Thread(target=UR_Monitor)$/;"	kind:variable	line:131
+t	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^t = threading.Thread(target=UR_Monitor)$/;"	kind:variable	line:131
+t2add	../RepeatabilityTest/flip.py	/^def t2add(a, b):$/;"	kind:function	line:284
+t2add	../flip.py	/^def t2add(a, b):$/;"	kind:function	line:284
+t2div	../RepeatabilityTest/flip.py	/^def t2div(a, s):$/;"	kind:function	line:298
+t2div	../flip.py	/^def t2div(a, s):$/;"	kind:function	line:298
+t2mul	../RepeatabilityTest/flip.py	/^def t2mul(a, s):$/;"	kind:function	line:294
+t2mul	../flip.py	/^def t2mul(a, s):$/;"	kind:function	line:294
+t2sub	../RepeatabilityTest/flip.py	/^def t2sub(a, b):$/;"	kind:function	line:289
+t2sub	../flip.py	/^def t2sub(a, b):$/;"	kind:function	line:289
+target_count	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^        target_count = target_count + 1$/;"	kind:variable	line:155
+target_count	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^target_count = 0$/;"	kind:variable	line:137
+target_count	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^        target_count = target_count + 1$/;"	kind:variable	line:155
+target_count	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^target_count = 0$/;"	kind:variable	line:137
+teach	../MasterControl.py	/^def teach():$/;"	kind:function	line:92
+teach	../RobotCommands.py	/^def teach():$/;"	kind:function	line:76
+teach.py	../teach.py	1;"	kind:file	line:1
+temp	../Clutter/getpos.py	/^temp = s.accept()$/;"	kind:variable	line:12
+threading	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^import threading$/;"	kind:namespace	line:8
+threading	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^import threading$/;"	kind:namespace	line:8
+tic	../Fall Research 2017/python/Python/robodk.py	/^def tic():$/;"	kind:function	line:296
+time	../Fall Research 2017/duplicate.py	/^import time$/;"	kind:namespace	line:2
+time	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^import time$/;"	kind:namespace	line:12
+time	../Fall Research 2017/python/Python/robodk.py	/^    import time$/;"	kind:namespace	line:298
+time	../Fall Research 2017/python/Python/robodk.py	/^    import time$/;"	kind:namespace	line:304
+time	../Fall Research 2017/python/Python/robodk.py	/^import time$/;"	kind:namespace	line:35
+time	../Fall Research 2017/python/Python/robodk.py	/^import time$/;"	kind:namespace	line:41
+time	../Fall Research 2017/python/Python/robolink.py	/^                    import time$/;"	kind:namespace	line:535
+time	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^import time$/;"	kind:namespace	line:12
+time	../Fall Research 2017/urclienttest.py	/^import time$/;"	kind:namespace	line:2
+time	../Fall Research 2017/urscriptor.py	/^import time$/;"	kind:namespace	line:2
+time	../MasterControl.py	/^import time$/;"	kind:namespace	line:5
+time	../RobotCommands.py	/^import time$/;"	kind:namespace	line:4
+time	../RobotControl.py	/^import time$/;"	kind:namespace	line:5
+time_out	../Fall Research 2017/python/Python/robodk.py	/^    def time_out(self):$/;"	kind:member	line:1465
+tk	../RepeatabilityTest/flip.py	/^import tkinter as tk$/;"	kind:namespace	line:20
+tk	../flip.py	/^import tkinter as tk$/;"	kind:namespace	line:20
+tkinter	../Fall Research 2017/python/Python/robodk.py	/^    import Tkinter as tkinter$/;"	kind:namespace	line:1354
+tkinter	../Fall Research 2017/python/Python/robodk.py	/^    import tkinter$/;"	kind:namespace	line:1358
+to	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+to	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+to	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+to_clip	../Fall Research 2017/python/Python/robodk.py	/^    def to_clip(self, event=None):$/;"	kind:member	line:1471
+toc	../Fall Research 2017/python/Python/robodk.py	/^def toc():$/;"	kind:function	line:302
+todecimal	../Fall Research 2017/python/Python/robodk.py	/^    def todecimal(value):$/;"	kind:function	line:315
+toggle	../MasterControl.py	/^def toggle():$/;"	kind:function	line:294
+tolist	../Fall Research 2017/python/Python/robodk.py	/^    def tolist(self):$/;"	kind:member	line:1121
+tr	../Fall Research 2017/python/Python/robodk.py	/^    def tr(self):$/;"	kind:member	line:945
+tr	../Fall Research 2017/python/Python/robodk.py	/^def tr(matrix):$/;"	kind:function	line:274
+transl	../Fall Research 2017/python/Python/robodk.py	/^def transl(tx,ty=None,tz=None):$/;"	kind:function	line:187
+unittest	../Fall Research 2017/python/Python/robodk.py	/^import unittest$/;"	kind:namespace	line:34
+up	../MasterControl.py	/^def up(a, v):$/;"	kind:function	line:121
+update	../RepeatabilityTest/flip.py	/^    def update(self):$/;"	kind:member	line:235
+update	../flip.py	/^    def update(self):$/;"	kind:member	line:235
+updatecursor	../RepeatabilityTest/flip.py	/^    def updatecursor(self, e):$/;"	kind:member	line:221
+updatecursor	../flip.py	/^    def updatecursor(self, e):$/;"	kind:member	line:221
+uploadThis	../Fall Research 2017/python/Python/robodk.py	/^    def uploadThis(localfile, filename):$/;"	kind:function	line:1312
+uploadThis	../Fall Research 2017/python/Python/robodk.py	/^    def uploadThis(path):$/;"	kind:function	line:1256
+ur5.py	../Fall Research 2017/python/ur5.py	1;"	kind:file	line:1
+urclienttest.py	../Fall Research 2017/urclienttest.py	1;"	kind:file	line:1
+urscriptor.py	../Fall Research 2017/urscriptor.py	1;"	kind:file	line:1
+used	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+using	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:454
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:460
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:466
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:472
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:478
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:485
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:492
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:499
+v	../MasterControl.py	/^            v = float(y[1])$/;"	kind:variable	line:506
+version	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+version_info	../Fall Research 2017/python/Python/robolink.py	/^import sys  # Only used to detect python version using sys.version_info$/;"	kind:namespace	line:36
+waitDI	../Fall Research 2017/python/Python/robolink.py	/^    def waitDI(self, io_var, io_value, timeout_ms=-1):$/;"	kind:member	line:2480
+warn	../Fall Research 2017/python/Python/robolink.py	/^from warnings import warn$/;"	kind:namespace	line:35
+winresize	../RepeatabilityTest/flip.py	/^    def winresize(self, e):$/;"	kind:member	line:124
+winresize	../flip.py	/^    def winresize(self, e):$/;"	kind:member	line:124
+with	../Fall Research 2017/python/Python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+with	../Fall Research 2017/python/UR_ActivateMonitoring.py	/^from robolink import *    # API to communicate with RoboDK$/;"	kind:namespace	line:6
+x	../AngleConversion.py	/^    x = input("Enter: ")$/;"	kind:variable	line:20
+x	../MasterControl.py	/^        x = input("Enter: ")$/;"	kind:variable	line:422
+x	../RobotControl.py	/^    x = input("Enter: ")/;"	kind:variable	line:37
+x	../RobotControl.py	/^x = input("Enter: ")$/;"	kind:variable	line:21
+x	../teach.py	/^    x = input("Enter: ")$/;"	kind:variable	line:21
+xyzrpw_2_pose	../Fall Research 2017/python/Python/robodk.py	/^def xyzrpw_2_pose(xyzrpw):$/;"	kind:function	line:362
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:451
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:457
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:463
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:469
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:475
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:482
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:489
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:496
+y	../MasterControl.py	/^            y = input("Enter a and v: ")$/;"	kind:variable	line:503
+y	../MasterControl.py	/^            y = int(input("Backward? "))$/;"	kind:variable	line:518
+y	../MasterControl.py	/^            y = int(input("Backward? "))$/;"	kind:variable	line:521
+y	../MasterControl.py	/^            y = int(input("Backward? "))$/;"	kind:variable	line:524
+y	../MasterControl.py	/^            y = int(input("Backward? "))$/;"	kind:variable	line:527
+y	../MasterControl.py	/^            y = return_joint_positions()$/;"	kind:variable	line:438
+y	../MasterControl.py	/^            y = return_pose()$/;"	kind:variable	line:434
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:452
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:458
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:464
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:470
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:476
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:483
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:490
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:497
+y	../MasterControl.py	/^            y = y.split(" ")$/;"	kind:variable	line:504
+y	../RobotControl.py	/^        y = RobotCommands.return_joint_positions()$/;"	kind:variable	line:34
+y	../RobotControl.py	/^        y = RobotCommands.return_pose()$/;"	kind:variable	line:30
+y	../teach.py	/^        y = x + "\\n"        $/;"	kind:variable	line:25
+z	../MasterControl.py	/^            z = input("Enter distance moved in meters: \\n")$/;"	kind:variable	line:493
+z	../MasterControl.py	/^            z = input("Enter distance moved in meters: \\n")$/;"	kind:variable	line:500
+z	../MasterControl.py	/^            z = input("Enter distance moved in meters: \\n")$/;"	kind:variable	line:507
+z	../MasterControl.py	/^            z = input("Enter six numbers specifying a pose: \\n")$/;"	kind:variable	line:479
+z	../MasterControl.py	/^            z = input("Enter six numbers specifying joint positions: \\n")$/;"	kind:variable	line:486

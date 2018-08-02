@@ -4,7 +4,7 @@ import socket
 import time
 
 HOST = '140.233.20.115'
-# PORT0 = 30000
+PORT0 = 30000
 PORT1 = 30001
 
 # s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

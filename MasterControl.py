@@ -11,8 +11,6 @@ PORT = 30000
 PORT2 = 30002
 
 ORIGINAL = "movel(p[0.253382,-0.0770761,0.410262,-1.99486,-0.096691,-1.87748], a = 0.3, v = 0.3)\n"
-# SECOND1 = "movel(p[0.267397,-0.0790473,0.409577,-2.03338,-0.0205629,-1.92116], a = 0.5, v = 0.5)\n"
-# SECOND2 = "movel(p[0.435683,0.0268291,0.425731,-2.18414,0.0709854,-2.04954], a = 0.5, v = 0.5)\n"
 NEXT = "movel(p[0.455506,-0.0263883,0.405709,-2.08937,0.139225,-2.01385], a = 0.5, v = 0.5)\n"
 DOWN = "def Move():\nmovel(p[0.253388,-0.0770718,0.410261,-1.99481,-0.0967188,-1.8774], a = 50, v = 25)\nend\n"
 UP = "def Move():\nmovel(p[0.270365,-0.100752,0.789496,1.70422,1.01859,2.15213], a = 50, v = 25)\nend\n"
@@ -208,10 +206,50 @@ def powerdown():
     s.send("powerdown()\n".encode("utf-8"))
 
 
-def linearX(d, a, v):
+# def linearX(d, a, v):
+#     s = client_socket()
+
+#     temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0,0.0," + d + ",0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+#     index1 = temp.find("a = ")
+#     index2 = temp.find(", v = ")
+#     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
+#     index1 = temp.find("v = ")
+#     index2 = temp.find(")", index1)
+#     temp = temp[ : (index1 + 4)] + str(v) + temp[index2 :]
+
+#     s.send(temp.encode("utf-8"))
+
+
+# def linearY(d, a, v):
+#     s = client_socket()
+
+#     temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0," + d + ",0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+#     index1 = temp.find("a = ")
+#     index2 = temp.find(", v = ")
+#     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
+#     index1 = temp.find("v = ")
+#     index2 = temp.find(")", index1)
+#     temp = temp[ : (index1 + 4)] + str(v) + temp[index2 :]
+
+#     s.send(temp.encode("utf-8"))
+
+# def linearZ(d, a, v):
+#     s = client_socket()
+
+#     temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[" + d + ",0.0,0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+#     index1 = temp.find("a = ")
+#     index2 = temp.find(", v = ")
+#     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
+#     index1 = temp.find("v = ")
+#     index2 = temp.find(")", index1)
+#     temp = temp[ : (index1 + 4)] + str(v) + temp[index2 :]
+
+#     s.send(temp.encode("utf-8"))
+
+def linearZ(d, a, v):
     s = client_socket()
 
-    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0,0.0," + d + ",0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0,0.0," + d + ",0.0,0.0,0.0]\nTarget = pose_add(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
     index1 = temp.find("a = ")
     index2 = temp.find(", v = ")
     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
@@ -225,7 +263,7 @@ def linearX(d, a, v):
 def linearY(d, a, v):
     s = client_socket()
 
-    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0," + d + ",0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[0.0," + d + ",0.0,0.0,0.0,0.0]\nTarget = pose_add(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
     index1 = temp.find("a = ")
     index2 = temp.find(", v = ")
     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
@@ -235,10 +273,10 @@ def linearY(d, a, v):
 
     s.send(temp.encode("utf-8"))
 
-def linearZ(d, a, v):
+def linearX(d, a, v):
     s = client_socket()
 
-    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[" + d + ",0.0,0.0,0.0,0.0,0.0]\nTarget = pose_trans(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
+    temp = "def Pose():\nCurPos = get_actual_tcp_pose()\nDisplacement = p[" + d + ",0.0,0.0,0.0,0.0,0.0]\nTarget = pose_add(CurPos, Displacement)\nmovej(Target, a = 0.5, v = 0.5)\nend\n"
     index1 = temp.find("a = ")
     index2 = temp.find(", v = ")
     temp = temp[ : (index1 + 4)] + str(a) + temp[index2 :]
@@ -247,6 +285,7 @@ def linearZ(d, a, v):
     temp = temp[ : (index1 + 4)] + str(v) + temp[index2 :]
 
     s.send(temp.encode("utf-8"))
+
 
 
 def toggle():
@@ -357,11 +396,7 @@ def curve():
 
 
 def arm():
-    # ARM = "def arm():\nmovej(p[0.638731,-0.379671,0.138594,0.230583,-1.59305,-0.0423721], a = 0.5, v = 0.5, t = 3)\nmovej(p[0.522702,-0.376583,0.155042,0.407091,-1.49957,0.0952902], a = 0.5, v = 0.5, t = 3)\nmovej(p[0.413804,-0.437115,0.144112,0.553805,-1.46122,0.239321], a = 0.5, v = 0.5, t = 3)\nmovej(p[0.237503,-0.543883,0.143131,0.813332,-1.36816,0.454261], a = 0.5, v = 0.5, t = 3)\nmovej(p[0.105378,-0.626008,0.132268,0.974303,-1.29439,0.684523], a = 0.5, v = 0.5, t = 3)\nend\n"
-    # ARM = "def arm():\nmovej(p[0.510353,-0.280654,0.32547,0.272994,-1.53764,-0.0369382], a = 0.5, v = 0.5, t = 3, r = 0.05)\nmovej(p[0.383958,-0.344475,0.335196,0.488167,-1.50189,0.196437], a = 0.5, v = 0.5, t = 3, r = 0.05)\nmovej(p[0.151416,-0.493351,0.292381,0.81161,-1.37066,0.558083], a = 0.5, v = 0.5, t = 4, r = 0.05)\nmovej(p[0.0317325,-0.60131,0.301975,0.955632,-1.27667,0.736863], a = 0.5, v = 0.5, t = 3, r = 0.05)\nend\n"
     ARM = "def arm():\nmovej(p[0.510353,-0.280654,0.32547,0.272994,-1.53764,-0.0369382], a = 0.5, v = 0.5, t = 2)\nsleep(3)\nmovej(p[0.383958,-0.344475,0.335196,0.488167,-1.50189,0.196437], a = 0.5, v = 0.5, t = 2)\nsleep(3)\nmovej(p[0.151416,-0.493351,0.292381,0.81161,-1.37066,0.558083], a = 0.5, v = 0.5, t = 3)\nsleep(3)\nmovej(p[0.0317325,-0.60131,0.301975,0.955632,-1.27667,0.736863], a = 0.5, v = 0.5, t = 2)\nend\n"
-    # ARM = "def arm():\nmovej(p[0.510353,-0.280654,0.32547,0.272994,-1.53764,-0.0369382], a = 0.5, v = 0.5, t = 2)\nsleep(0.5)\nmovej(p[0.383958,-0.344475,0.335196,0.488167,-1.50189,0.196437], a = 0.5, v = 0.5, t = 2)\nsleep(0.5)\nmovej(p[0.151416,-0.493351,0.292381,0.81161,-1.37066,0.558083], a = 0.5, v = 0.5, t = 3)\nsleep(0.5)\nmovej(p[0.0317325,-0.60131,0.301975,0.955632,-1.27667,0.736863], a = 0.5, v = 0.5, t = 2)\nend\n"
-    # ARM = "def arm():\nmovej(p[0.510353,-0.280654,0.32547,0.272994,-1.53764,-0.0369382], a = 0.5, v = 0.5, t = 2, r = 0.05)\nmovej(p[0.383958,-0.344475,0.335196,0.488167,-1.50189,0.196437], a = 0.5, v = 0.5, t = 2, r = 0.05)\nmovej(p[0.151416,-0.493351,0.292381,0.81161,-1.37066,0.558083], a = 0.5, v = 0.5, t = 3, r = 0.05)\nmovej(p[0.0317325,-0.60131,0.301975,0.955632,-1.27667,0.736863], a = 0.5, v = 0.5, t = 2, r = 0.05)\nend\n"
     
     s = client_socket()
     s.send(ARM.encode("utf-8"))
