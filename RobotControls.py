@@ -167,16 +167,24 @@ def server():
 if __name__ == "__main__":
     counter = 0
     if len(sys.argv) != 2:
-        print("usage: python3 MasterControl.py (c|n)")
-    if sys.argv[1] == "c":
+        print("""usage: python3 RobotControls.py (-c|-n)
+    -c: Establish a two-way connection with the robot arm. The program can both send and receive information from the robot arm.
+    -n: Establish a one-way connection with the robot arm. The program can only send instructions to the robot arm.""")
+        exit()
+    if sys.argv[1] == "-c":
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.bind(('', PORT))
         s.listen(5)
         client, client_addr = s.accept()
+        print("Connected to the robot arm and can both send and receive information")
+    elif sys.argv[1] == "-n":
+        print("Connected to the robot arm but can only send instructions")
+    else:
+        print("usage: python3 RobotControls.py (-c|-n)")
 
     while True:
-        x = input("Enter: ")
+        x = input("Enter command: ")
         if x == "done":
             break
         if x == "freedrive":
@@ -194,37 +202,50 @@ if __name__ == "__main__":
             print("joints:")
             print(y)
         if x == "move pose":
-            y = input("Enter a and v: ")
+            y = input("Enter acceleration and velocity: ")
             y = y.split(" ")
             a = float(y[0])
             v = float(y[1])
             z = input("Enter six numbers specifying a pose: \n")
             move_pose(z, a, v)
         if x == "move joints":
-            y = input("Enter a and v: ")
+            y = input("Enter acceleration and velocity: ")
             y = y.split(" ")
             a = float(y[0])
             v = float(y[1])
             z = input("Enter six numbers specifying joint positions: \n")
             move_joints(z, a, v)
         if x == "linear-x":
-            y = input("Enter a and v: ")
+            y = input("Enter acceleration and velocity: ")
             y = y.split(" ")
             a = float(y[0])
             v = float(y[1])
             z = input("Enter distance moved in meters: \n")
             linearX(z, a, v)
         if x == "linear-y":
-            y = input("Enter a and v: ")
+            y = input("Enter acceleration and velocity: ")
             y = y.split(" ")
             a = float(y[0])
             v = float(y[1])
             z = input("Enter distance moved in meters: \n")
             linearY(z, a, v)
         if x == "linear-z":
-            y = input("Enter a and v: ")
+            y = input("Enter acceleration and velocity: ")
             y = y.split(" ")
             a = float(y[0])
             v = float(y[1])
             z = input("Enter distance moved in meters: \n")
             linearZ(z, a, v)
+        if x == "help":
+            print("""- help: Get a list of all commands and what they do
+- done: Terminate all the connections and the program
+- powerdown: Shut down the robot arm remotely
+- freedrive: Put the robot arm into free drive mode
+- end freedrive: End the free drive mode on the robot arm
+- pose: Get the pose data from the robot arm
+- joints: Get the joint positions of the current robot arm configuration, both in degrees and radians
+- move pose: Move the robot arm to a certain pose with certain velocity and acceleration. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the pose with six numbers separated by commas.
+- move joints: Move the robot arm to a certain joint position with certain velocity and acceleration. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the joint position with six numbers separated by commas.
+- linear-x: Move the robot arm strictly along the x-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the x-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.
+- linear-y: Move the robot arm strictly along the y-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the y-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.
+- linear-z: Move the robot arm strictly along the z-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the z-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.""")
