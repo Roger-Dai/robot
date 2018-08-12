@@ -179,6 +179,7 @@ if __name__ == "__main__":
         client, client_addr = s.accept()
         print("Connected to the robot arm and can both send and receive information")
     elif sys.argv[1] == "-n":
+        s = client_socket()
         print("Connected to the robot arm but can only send instructions")
     else:
         print("usage: python3 RobotControls.py (-c|-n)")
@@ -246,6 +247,6 @@ if __name__ == "__main__":
 - joints: Get the joint positions of the current robot arm configuration, both in degrees and radians
 - move pose: Move the robot arm to a certain pose with certain velocity and acceleration. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the pose with six numbers separated by commas.
 - move joints: Move the robot arm to a certain joint position with certain velocity and acceleration. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the joint position with six numbers separated by commas.
-- linear-x: Move the robot arm strictly along the x-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the x-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.
-- linear-y: Move the robot arm strictly along the y-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the y-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.
-- linear-z: Move the robot arm strictly along the z-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the z-axis you want the robot arm to move. **The axes here are determined by the base reference frame**.""")
+- linear-x: Move the robot arm strictly along the x-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the x-axis you want the robot arm to move. The axes here are determined by the base reference frame.
+- linear-y: Move the robot arm strictly along the y-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the y-axis you want the robot arm to move. The axes here are determined by the base reference frame.
+- linear-z: Move the robot arm strictly along the z-axis for a certain distance. The program would first ask for the acceleration(m/s^2) and velocity(m/s), and then the distance(m) along the z-axis you want the robot arm to move. The axes here are determined by the base reference frame.""")
